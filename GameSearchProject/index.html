@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/core.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <a href="/GameSearchProject/index.html" class="logo">Home</a>
+
+            <nav class="navbar">
+                <a href="/GameSearchProject/pages/home_works.html">p1</a>
+                <a href="/GameSearchProject/pages/lessons.html">p2</a>
+                <a href="">p3</a>
+            </nav>
+            <button class="btn-click" id="btn-get">Click!</button>
+        </header>
+
+        <div class="main_block">
+            <div class="container">
+                <div class="inner_main">
+                    <h1><strong id="js-color">Игры</strong> - на самом деле очень интересно и весело!</h1>
+                    <div class="colors-buttons">
+                        <button class="btn btn-color"></button>
+                        <button class="btn btn-color"></button>
+                        <button class="btn btn-color"></button>
+                        <button class="btn btn-color"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-slider">
+            <div class="item active">
+                <div class="img-box">
+                    <img src="/GameSearchProject/src/sliderPics/tsyri.png">
+                </div>
+                <div class="info-box">
+                    <div class="info-slider">
+                        <div class="info-item" style="--i:0;">
+                            <h2>title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed suscipit
+                                nemo, tenetur, placeat ea odit voluptatibus deleniti perspiciatis cumque a quasi
+                                laboriosam fuga? Obcaecati, expedita doloremque? Laborum, itaque explicabo!</p>
+                            <a href="#" class="btn">View more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-box">
+                    <img src="/GameSearchProject/src/sliderPics/img2.png">
+                </div>
+                <div class="info-box">
+                    <div class="info-slider">
+                        <div class="info-item" style="--i:1;">
+                            <h2>title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed suscipit
+                                nemo, tenetur, placeat ea odit voluptatibus deleniti perspiciatis cumque a quasi
+                                laboriosam fuga? Obcaecati, expedita doloremque? Laborum, itaque explicabo!</p>
+                            <a href="#" class="btn">View more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-box">
+                    <img src="/GameSearchProject/src/sliderPics/img3.png">
+                </div>
+                <div class="info-box">
+                    <div class="info-slider">
+                        <div class="info-item" style="--i:2;">
+                            <h2>title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed suscipit
+                                nemo, tenetur, placeat ea odit voluptatibus deleniti perspiciatis cumque a quasi
+                                laboriosam fuga? Obcaecati, expedita doloremque? Laborum, itaque explicabo!</p>
+                            <a href="#" class="btn">View more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-box">
+                    <img src="/GameSearchProject/src/sliderPics/img4.png">
+                </div>
+                <div class="info-box">
+                    <div class="info-slider">
+                        <div class="info-item" style="--i:3;">
+                            <h2>title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed suscipit
+                                nemo, tenetur, placeat ea odit voluptatibus deleniti perspiciatis cumque a quasi
+                                laboriosam fuga? Obcaecati, expedita doloremque? Laborum, itaque explicabo!</p>
+                            <a href="#" class="btn">View more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="thumb">
+                <li class="selected"><img src="/GameSearchProject/src/sliderPics/thumb1.png"></li>
+                <li><img src="/GameSearchProject/src/sliderPics/thumb2.png"></li>
+                <li><img src="/GameSearchProject/src/sliderPics/thumb3.png"></li>
+                <li><img src="/GameSearchProject/src/sliderPics/thumb4.png"></li>
+            </ul>
+        </div>
+
+        <!-- <div class="slider_block">
+        <div class="container">
+            <div class="inner_slider">
+                <div class="slider">
+                    <button class="btn-slide" id="prev">&lt;prev</button>
+                    <div class="slide active_slide">
+                        <div class="slide_card">
+                            <h3>regular expression</h3>
+                            <p>Простыми словами, регулярное выражение - это набор символов, который задает определенные правила для поиска и сопоставления текста. Вы можете использовать регулярные выражения, чтобы найти определенные строки в тексте, заменить части строки на другие значения или извлечь нужную информацию из текста.</p>
+                            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_expressions" target="_blank">узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <h3>recursion</h3>
+                            <p>Простыми словами, рекурсия - это, когда функция делает повторяющиеся вызовы самой себя для решения задачи, пока не достигнет определенного условия выхода из рекурсии.</p>
+                            <a href="https://learn.javascript.ru/recursion" target="_blank">узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <h3>json</h3>
+                            <p>Простыми словами, JSON - это способ представления данных в виде текста, чтобы они могли быть легко поняты и использованы различными программами. Он использует простые правила для описания объектов и массивов, а также для представления простых типов данных, таких как строки, числа, логические значения и т.д.</p>
+                            <a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/Objects/JSON" target="_blank">узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <h3>event loop</h3>
+                            <p>Простыми словами, event loop похож на дежурного, который непрерывно проверяет, произошло ли какое-либо событие, и реагирует на него, когда оно происходит. Он имеет список задач, которые нужно выполнить, и он перебирает этот список событий одно за другим, обрабатывая каждое событие, когда оно наступает.</p>
+                            <a href="https://highload.today/kak-ustroen-event-loop-v-javascript-parallelnaya-model-i-tsikl-sobytij/" target="_blank">узнать подробнее</a>
+                        </div>
+                    </div>
+                    <button class="btn-slide" id="next">next&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+        <div class="botlle">
+            <div class="container">
+                <div class="bottle_inner">
+                    <a href="pages/monster.html">
+                        <div class="bowl">
+                            <div class="shadow"></div>
+                            <div class="liquid"></div>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <a href="" target="_blank">
+                    <div class="inner_footer">
+                        <h2>Made by Adilet</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal_dialog">
+            <div class="modal_content">
+                <form action="#">
+                    <div class="modal_close">&times;</div>
+                    <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="text" class="modal_input">
+                    <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/main.js"></script>
+<script src="js/modal.js"></script>
+
+</html>

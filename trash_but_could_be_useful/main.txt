@@ -1,0 +1,83 @@
+/* const $thumbs = document.querySelectorAll('.thumb li');
+const $infoSliders = document.querySelectorAll('.info-slider');
+const $items = document.querySelectorAll('.item');
+
+let currentIndex = 0;
+
+$thumbs.forEach((thumb, index) => {
+    thumb.addEventListener('click', (event) => {
+
+        setTimeout(() => {
+            document.querySelector('.thumb . selected').classList.remove('selected');
+            thumb.classList.add('selected');
+        }, 100);
+
+        $thumbs.forEach((thum) => {
+            thum.classList.add('disabled');
+            setTimeout(() => {
+                thum.classList.remove('disabled');
+            }, 450);
+        });
+
+        let anySelected = false;
+        let currentSelected = event.target.parentElement.nextElementSibling;
+
+        while (currentSelected !== null && !anySelected) {
+            anySelected = anySelected || currentSelected.matches('.selected');
+            currentSelected = currentSelected.nextElementSibling;
+
+            if (anySelected) {
+                $items[currentIndex].classList.add('previously-active');
+                setTimeout(() => {
+                    document.querySelector('.item.previously-active').classList.remove('previously-active');
+                }, 100);
+
+                currentIndex = index;
+                $items[currentIndex].classList.add('back-active');
+
+                setTimeout(() => {
+                    document.querySelector('.item.back-active').classList.remove('back-active');
+                }, 100);
+            };
+        };
+
+        currentIndex = index;
+
+        $infoSliders.forEach(slide => {
+            slide.style.transform = `translateX(${currentIndex * -100}%)`;
+        });
+
+        document.querySelector('.item.active').classList.remove('active');
+        $items[currentIndex].classList.add('active');
+
+        document.querySelector('.thumb .selected').classList.remove('selected');
+        thumb.classList.add('selected');
+
+
+    });
+}); */
+
+
+
+
+
+        <div class="header">
+            <div class="container">
+                <div class="inner_header">
+                    <a href="index.html">
+                        <div class="logotype">
+                            <h2>BG</h2>
+                        </div>
+                    </a>
+                    <ul class="menu">
+                        <li class="menu_link">
+                            <a href="pages/home_works.html">page1</a>
+                        </li>
+                        <li class="menu_link">
+                            <a href="pages/lessons.html">page2</a>
+                        </li>
+                    </ul>
+                    <button class="btn" id="btn-get">Click me!</button>
+                </div>
+            </div>
+        </div>
