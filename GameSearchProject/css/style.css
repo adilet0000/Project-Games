@@ -2,6 +2,10 @@ body {
     overflow-x: hidden;
 }
 
+:root {
+    --index: calc(1vw + 1vh);
+}
+
 ::-webkit-scrollbar {
     width: 0;
   }
@@ -29,19 +33,19 @@ body {
 .logo {
     font-size: 32px;
     color: #fff;
+    text-shadow: 0 0 15px #6b6b6b;
     text-decoration: none;
     font-weight: 700;
-    box-shadow: 0 10px 90px rgba(0, 0, 0, .1);
 }
 
 .navbar a {
     position: relative;
     font-size: 18px;
     color: #fff;
+    text-shadow: 0 0 25px #000000;
     font-weight: 400;
     text-decoration: none;
     margin-left: 40px;
-    box-shadow: 0 10px 90px rgba(0, 0, 0, .1);
 }
 
 .navbar a::before {
@@ -254,7 +258,7 @@ body {
 }
 
 .item:nth-child(2) .img-box {
-    background-color: rgb(65, 50, 50);
+    background-color: rgb(212, 198, 0);
 }
 
 .item:nth-child(3) .img-box {
@@ -267,9 +271,9 @@ body {
 
 .img-box img {
     position: absolute;
-    bottom: 20vh;
-    width: 45%;
-    left: 35%;
+    bottom: calc(var(--index) * 5.2);
+    width: 100%;
+    left: 20%;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .2));
     transform: translateY(20%);
 }
