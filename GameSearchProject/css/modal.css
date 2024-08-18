@@ -1,0 +1,115 @@
+/* MODAL */
+:root {
+    --index: calc(1vh + 1vw);
+    --text_shadow: 0 0 20px black;
+}
+
+h3 {
+    position: absolute;
+    left: calc(var(--index) * 0.75);
+    top: calc(var(--index) * 0.4);
+    text-shadow: var(--text_shadow);
+}
+
+input {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+label {
+    text-shadow: var(--text_shadow);
+    text-shadow: var(--text_shadow);
+}
+
+.modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.modal[style*="display: block"] {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal_dialog {
+    max-width: calc(var(--index) * 20);
+    margin: 10vh auto;
+}
+
+.modal_content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: calc(var(--index) * 35);
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid var(--orange);
+    border-radius: 14px;
+    max-height: 80vh;
+    transition: transform 0.3s ease; /* Анимация появления */
+    transform: translateY(-30px);
+}
+
+.modal[style*="display: block"] .modal_content {
+    transform: translateY(0);
+}
+
+.modal_close {
+    position: absolute;
+    top: calc(var(--index) * 0.4);
+    right: calc(var(--index) * 0.75);
+    font-size: 30px;
+    color: red;
+    opacity: 0.75;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.modal_title {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+
+.inner_converter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    width: 500px;
+    height: 400px;
+}
+
+.inner_converter > div {
+    display: flex;
+    flex-direction: column;
+}
+

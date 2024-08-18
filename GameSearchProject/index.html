@@ -6,6 +6,7 @@
     <title>Java Script</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body>
@@ -19,13 +20,15 @@
                 <a href="/GameSearchProject/pages/lessons.html">p2</a>
                 <a href="/GameSearchProject/pages/cardCharacters.html">Characters</a>
             </nav>
-            <button class="btn-click" id="btn-get">Click!</button>
+            <button class="btn-click" id="btn-get">Convert</button>
         </header>
 
         <div class="main_block">
             <div class="container">
                 <div class="inner_main">
-                    <h1><strong id="js-color">Игры</strong> - на самом деле очень интересно и весело!</h1>
+                    <h1>"The right man in the wrong place makes all the difference in the world"- <strong
+                            id="js-color">GMAN</strong></h1>
+                    <!-- <h1>I used to be an <strong id="js-color">adventurer</strong> like you, then I took an arrow in the knee.</h1> -->
                     <div class="colors-buttons">
                         <button class="btn btn-color"></button>
                         <button class="btn btn-color"></button>
@@ -39,16 +42,16 @@
         <div class="tab-slider">
             <div class="item active">
                 <div class="img-box">
-                    <img src="/GameSearchProject/src/sliderPics/tsyri.png">
+                    <img src="/GameSearchProject/src/sliderPics/witcher-3-blood-and-wine.png">
                 </div>
                 <div class="info-box">
                     <div class="info-slider">
                         <div class="info-item" style="--i:0;">
-                            <h2>title</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed suscipit
-                                nemo, tenetur, placeat ea odit voluptatibus deleniti perspiciatis cumque a quasi
-                                laboriosam fuga? Obcaecati, expedita doloremque? Laborum, itaque explicabo!</p>
-                            <a href="#" class="btnTabSlider">View more</a>
+                            <h2>The Witcher 3: Wild Hunt</h2>
+                            <p>You are Geralt of Rivia, a monster slayer for hire. You travel through a world engulfed
+                                in war and lurking monsters. You must complete a contract to find Ciri, the Child of
+                                Destiny, a living weapon capable of changing the face of this world.</p>
+                            <a href="pages/witcher.html" class="btnTabSlider">View more</a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +64,11 @@
                     <div class="info-slider">
                         <div class="info-item" style="--i:1;">
                             <h2>Cyberpunk 2077</h2>
-                            <p>PLAY IN A NEW WAY WITH PATCH 2.1 After updating the game to version 2.1, the streets of Night City have become even more fun. Ride a decent subway, listen to music on the radio port during walks, arrange dates in your apartment, participate in races, master new vehicles, learn to do tricks and tell on motorcycles, reveal new secrets - in a word, do everything that your soul can be!</p>
+                            <p>PLAY IN A NEW WAY WITH PATCH 2.1 After updating the game to version 2.1, the streets of
+                                Night City have become even more fun. Ride a decent subway, listen to music on the radio
+                                port during walks, arrange dates in your apartment, participate in races, master new
+                                vehicles, learn to do tricks and tell on motorcycles, reveal new secrets - in a word, do
+                                everything that your soul can be!</p>
                             <a href="pages/cyberpunk.html" class="btnTabSlider">View more</a>
                         </div>
                     </div>
@@ -176,13 +183,36 @@
     <div class="modal">
         <div class="modal_dialog">
             <div class="modal_content">
-                <form action="#">
-                    <div class="modal_close">&times;</div>
-                    <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
-                    <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
-                    <input required placeholder="Ваш номер телефона" name="phone" type="text" class="modal_input">
-                    <button class="btn btn_dark btn_min">Перезвонить мне</button>
-                </form>
+                <div class="modal_close">&times;</div>
+                <div class="converter">
+                    <h3>CONVERTER</h3>
+                    <div class="inner_converter">
+                        <div class="som">
+                            <label for="som">KGS</label>
+                            <input type="number" id="som">
+                        </div>
+                        <div class="kzt">
+                            <label for="kzt">KZT</label>
+                            <input type="number" id="kzt">
+                        </div>
+                        <div class="rub">
+                            <label for="rub">RUB</label>
+                            <input type="number" id="rub">
+                        </div>
+                        <div class="usd">
+                            <label for="usd">USD</label>
+                            <input type="number" id="usd">
+                        </div>
+                        <div class="eur">
+                            <label for="eur">EUR</label>
+                            <input type="number" id="eur">
+                        </div>
+                        <div class="gbp">
+                            <label for="gbp">GBP</label>
+                            <input type="number" id="gbp">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -61,22 +61,22 @@ h4 {
 }
 
 strong {
-    color: #F79300;
+    color: #000000;
 }
 
 label {
     font-size: 24px;
-    color: var(--orange);
+    color: var(--color_for_inputs);
 }
 
 input {
-    width: 350px;
+    width: 450px;
     height: 50px;
     font-size: 20px;
     padding-left: 5px;
-    color: var(--orange);
-    background: black;
-    border: 2px solid var(--orange);
+    color: var(--black);
+    background: rgb(255, 255, 255, 0.4);
+    border: 2px solid var(--color_for_inputs);
 }
 
 .checker {
@@ -88,7 +88,7 @@ input {
     display: block;
     width: 100px;
     height: 100px;
-    background: var(--orange);
+    background: var(--color_for_inputs);
     color: black;
     font-size: 20px;
     text-transform: uppercase;
@@ -104,6 +104,6 @@ input {
 }
 
 :root {
-    --orange: orange;
-    --black: black;
+    --color_for_inputs: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
 }
