@@ -55,7 +55,7 @@ label {
     justify-content: center;
     width: 100%;
     height: calc(var(--index) * 35);
-    padding: 40px;
+    padding: calc(var(--index) * 2); /* check bylo 40px */
     background-color: rgba(255, 255, 255, 0.8);
     border: 2px solid var(--orange);
     border-radius: 14px;
@@ -93,7 +93,7 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
+    padding: calc(var(--index) * 3) 0; /* bylo 100px */
 }
 
 
@@ -104,8 +104,8 @@ label {
     flex-direction: column;
     gap: 30px;
     margin-top: 50px;
-    width: 500px;
-    height: 400px;
+    width: calc(var(--index) * 12); /* 500px */
+    height: calc(var(--index) * 10); /* 400px */
 }
 
 .inner_converter > div {
