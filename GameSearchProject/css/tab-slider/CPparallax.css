@@ -10,7 +10,7 @@ body {
     font-family: "Montserrat";
     font-style: normal;
     font-size: 400;
-    background-color: #182225;
+    background-color: #fffb00;
     color: #fff;
     line-height: 1.55;
 }
@@ -180,7 +180,7 @@ body {
     position: absolute;
     width: 100%;
     height: calc(var(--index) * 10);
-    background-image: url('../src/parallax_cyberpunk_pics/divider.png');
+    background-image: url('../../src/parallax_cyberpunk_pics/divider.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -192,7 +192,7 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -204,7 +204,7 @@ body {
     position: absolute;
     background-size: cover;
     background-position: center;
-    z-index: 2;
+    z-index: 0;
     transition: var(--transition);
     will-change: transform;
 }
@@ -229,19 +229,30 @@ body {
 }
 
 .layer__header {
-    transform: translate3d(0, calc(var(--scrollTop) / 1.2), 0);
+    z-index: 1;
+    transform: translate3d(0, calc(var(--scrollTop) / 1.75), 0);
     text-transform: uppercase;
     font-weight: 700;
-    color: #c53838;
-    text-shadow: 0 0 15px #8f4037;
+    color: #ffffff;
+    text-shadow: 0 0 15px #747200;
     transition: var(--transition);
-    z-index: 1;
     will-change: transform;
 }
 
 .layer__title {
     font-size: calc(var(--index) * 3);
     letter-spacing: calc(var(--index) / 5);
+    z-index: 99;
+}
+
+.layer__title a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: text-shadow 0.5s ease;
+}
+
+.layer__title a:hover {
+    text-shadow: 0 0 10px rgba(238, 255, 0, 0.7);
 }
 
 .layer__caption {

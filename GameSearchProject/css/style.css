@@ -10,58 +10,6 @@ body {
     width: 0;
   }
 
-/* HEADER */
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 200;
-    transition: .4s linear;
-}
-
-.header.hide {
-    transform: translateY(-100px);
-}
-
-.logo {
-    font-size: 32px;
-    color: #fff;
-    text-shadow: 0 0 15px #6b6b6b;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.navbar a {
-    position: relative;
-    font-size: 18px;
-    color: #fff;
-    text-shadow: 0 0 25px #000000;
-    font-weight: 400;
-    text-decoration: none;
-    margin-left: 40px;
-}
-
-.navbar a::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: 0.3s;
-}
-
-.navbar a:hover::before {
-    width: 100%;
-}
 
 /* BUTTON CLICK */
 .btn-click {
@@ -260,7 +208,7 @@ body {
 
 .item:nth-child(1) .img-box {
     /* background-color: цвет под картинку №1, тип новая картинка новый цвет; */
-    background-color: rgb(150, 150, 150);
+    background-color: rgb(80, 80, 80);
 }
 
 .item:nth-child(2) .img-box {
@@ -268,11 +216,11 @@ body {
 }
 
 .item:nth-child(3) .img-box {
-    background-color: rgb(164, 91, 91);
+    background-color: rgb(218, 218, 218);
 }
 
 .item:nth-child(4) .img-box {
-    background-color: rgb(195, 49, 49);
+    background-color: rgb(10, 10, 10);
 }
 
 .img-box img {
@@ -366,6 +314,11 @@ body {
     cursor: pointer;
     margin: calc(var(--index) * 1.5) 0;
     overflow: hidden;
+    transition: box-shadow .3s ease;
+}
+
+.thumb li:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, .9);
 }
 
 .thumb li.selected {

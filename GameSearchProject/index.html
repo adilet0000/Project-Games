@@ -3,119 +3,123 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Java Script</title>
+
+    <title>FGames</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/core.css">
     <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <header class="header">
-            <a href="/GameSearchProject/index.html" class="logo">Home</a>
+    <!-- <div class="wrapper"> -->
+    <!-- HEADER -->
+    <header class="header">
+        <a href="/GameSearchProject/index.html" class="logo">Main</a>
 
-            <nav class="navbar">
-                <a href="/GameSearchProject/pages/home_works.html">p1</a>
-                <a href="/GameSearchProject/pages/lessons.html">p2</a>
-                <a href="/GameSearchProject/pages/cardCharacters.html">Characters</a>
-            </nav>
-            <button class="btn-click" id="btn-get">Convert</button>
-        </header>
+        <nav class="navbar">
+            <a href="/GameSearchProject/pages/characters.html">Characters</a>
+            <a href="/GameSearchProject/pages/mini-games.html">Mini-Games</a>
+            <a href="/GameSearchProject/pages/lessons.html">Lessons</a>
+        </nav>
+        <button class="btn-click" id="btn-get">Convert</button>
+    </header>
 
-        <div class="main_block">
-            <div class="container">
-                <div class="inner_main">
-                    <h1>"The right man in the wrong place makes all the difference in the world"- <strong
-                            id="js-color">GMAN</strong></h1>
-                    <!-- <h1>I used to be an <strong id="js-color">adventurer</strong> like you, then I took an arrow in the knee.</h1> -->
-                    <div class="colors-buttons">
-                        <button class="btn btn-color"></button>
-                        <button class="btn btn-color"></button>
-                        <button class="btn btn-color"></button>
-                        <button class="btn btn-color"></button>
+    <div class="main_block">
+        <div class="container">
+            <div class="inner_main">
+                <h1>"The right man in the wrong place makes all the difference in the world"- <strong
+                        id="js-color">GMAN</strong></h1>
+                <!-- <h1>I used to be an <strong id="js-color">adventurer</strong> like you, then I took an arrow in the knee.</h1> -->
+                <div class="colors-buttons">
+                    <button class="btn btn-color"></button>
+                    <button class="btn btn-color"></button>
+                    <button class="btn btn-color"></button>
+                    <button class="btn btn-color"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB-SLIDER -->
+    <div class="tab-slider">
+        <div class="item active">
+            <div class="img-box">
+                <img src="/GameSearchProject/src/sliderPics/witcher-3.png">
+            </div>
+            <div class="info-box">
+                <div class="info-slider">
+                    <div class="info-item" style="--i:0;">
+                        <h2>The Witcher 3: Wild Hunt</h2>
+                        <p>You are Geralt of Rivia, a monster slayer for hire. You travel through a world engulfed
+                            in war and lurking monsters. You must complete a contract to find Ciri, the Child of
+                            Destiny, a living weapon capable of changing the face of this world.</p>
+                        <a href="pages/witcher.html" class="btnTabSlider">View more</a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="tab-slider">
-            <div class="item active">
-                <div class="img-box">
-                    <img src="/GameSearchProject/src/sliderPics/witcher-3-blood-and-wine.png">
-                </div>
-                <div class="info-box">
-                    <div class="info-slider">
-                        <div class="info-item" style="--i:0;">
-                            <h2>The Witcher 3: Wild Hunt</h2>
-                            <p>You are Geralt of Rivia, a monster slayer for hire. You travel through a world engulfed
-                                in war and lurking monsters. You must complete a contract to find Ciri, the Child of
-                                Destiny, a living weapon capable of changing the face of this world.</p>
-                            <a href="pages/witcher.html" class="btnTabSlider">View more</a>
-                        </div>
+        <div class="item">
+            <div class="img-box">
+                <img src="/GameSearchProject/src/sliderPics/cptitle.png">
+            </div>
+            <div class="info-box">
+                <div class="info-slider">
+                    <div class="info-item" style="--i:1;">
+                        <h2>Cyberpunk 2077</h2>
+                        <p>Cyberpunk 2077 is an open-world action-adventure RPG set in the futuristic metropolis of
+                            Night City, where power, luxury, and body modifications are prized above all else.</p>
+                        <a href="pages/cyberpunk.html" class="btnTabSlider">View more</a>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="img-box">
-                    <img src="/GameSearchProject/src/sliderPics/cptitle.png">
-                </div>
-                <div class="info-box">
-                    <div class="info-slider">
-                        <div class="info-item" style="--i:1;">
-                            <h2>Cyberpunk 2077</h2>
-                            <p>PLAY IN A NEW WAY WITH PATCH 2.1 After updating the game to version 2.1, the streets of
-                                Night City have become even more fun. Ride a decent subway, listen to music on the radio
-                                port during walks, arrange dates in your apartment, participate in races, master new
-                                vehicles, learn to do tricks and tell on motorcycles, reveal new secrets - in a word, do
-                                everything that your soul can be!</p>
-                            <a href="pages/cyberpunk.html" class="btnTabSlider">View more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="img-box">
-                    <img src="/GameSearchProject/src/sliderPics/img3.png">
-                </div>
-                <div class="info-box">
-                    <div class="info-slider">
-                        <div class="info-item" style="--i:2;">
-                            <h2>title</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed suscipit
-                                nemo, tenetur, placeat ea odit voluptatibus deleniti perspiciatis cumque a quasi
-                                laboriosam fuga? Obcaecati, expedita doloremque? Laborum, itaque explicabo!</p>
-                            <a href="#" class="btnTabSlider">View more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="img-box">
-                    <img src="/GameSearchProject/src/sliderPics/img4.png">
-                </div>
-                <div class="info-box">
-                    <div class="info-slider">
-                        <div class="info-item" style="--i:3;">
-                            <h2>title</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed suscipit
-                                nemo, tenetur, placeat ea odit voluptatibus deleniti perspiciatis cumque a quasi
-                                laboriosam fuga? Obcaecati, expedita doloremque? Laborum, itaque explicabo!</p>
-                            <a href="#" class="btnTabSlider">View more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="thumb">
-                <li class="selected"><img src="/GameSearchProject/src/sliderPics/thumb1.png"></li>
-                <li><img src="/GameSearchProject/src/sliderPics/thumb2.png"></li>
-                <li><img src="/GameSearchProject/src/sliderPics/thumb3.png"></li>
-                <li><img src="/GameSearchProject/src/sliderPics/thumb4.png"></li>
-            </ul>
         </div>
+        <div class="item">
+            <div class="img-box">
+                <img src="/GameSearchProject/src/sliderPics/divinity-2.png">
+            </div>
+            <div class="info-box">
+                <div class="info-slider">
+                    <div class="info-item" style="--i:2;">
+                        <h2>Divinity: Original Sin 2 - Definitive Edition</h2>
+                        <p>The famous role-playing game from the developers of Baldur's Gate 3. Assemble a party. Master
+                            a powerful combat system. Invite up to three friends with you, but remember that only one of
+                            you can become a god.</p>
+                        <a href="pages/divinity.html" class="btnTabSlider">View more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="img-box">
+                <img src="/GameSearchProject/src/sliderPics/dota-2.png">
+            </div>
+            <div class="info-box">
+                <div class="info-slider">
+                    <div class="info-item" style="--i:3;">
+                        <h2>DOTA 2</h2>
+                        <p>Every day, millions of players around the world fight as one of more than a hundred Dota 2
+                            heroes, and even after thousands of hours, there is still much to learn. Thanks to regular
+                            updates, the game lives its own life: gameplay, features, and heroes are constantly
+                            changing.</p>
+                        <a href="#" class="btnTabSlider">View more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="thumb">
+            <li class="selected"><img src="/GameSearchProject/src/sliderPics/the-witcher-3-thumbnail.png"></li>
+            <li><img src="/GameSearchProject/src/sliderPics/cyberPThumbnail.png"></li>
+            <li><img src="/GameSearchProject/src/sliderPics/divinityThumbnail.png"></li>
+            <li><img src="/GameSearchProject/src/sliderPics/dotaThumbnil.png"></li>
+        </ul>
+    </div>
 
-        <!-- <div class="slider_block">
+    <!-- SLIDER -->
+    <!-- <div class="slider_block">
         <div class="container">
             <div class="inner_slider">
                 <div class="slider">
@@ -154,65 +158,52 @@
         </div>
     </div> -->
 
-        <div class="botlle">
-            <div class="container">
-                <div class="bottle_inner">
-                    <a href="pages/monster.html">
-                        <div class="bowl">
-                            <div class="shadow"></div>
-                            <div class="liquid"></div>
+    <!-- BOTTLE -->
+    <div class="botlle">
+        <div class="container">
+            <div class="bottle_inner">
+                <a href="pages/monster.html">
+                    <div class="bowl">
+                        <div class="shadow"></div>
+                        <div class="liquid"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 
-                        </div>
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer_inner">
+                <div class="left">
+                    <div>
+                        <div class="light_logo">FGames</div>
+                        <div class="footer_logo">FGames</div>
+                    </div>
+                    <ul class="footer_github">
+                        <a href="https://github.com/adilet0000" target="_blank">
+                            <p class="githubTitle"><span>My </span>GitHub</p>
+                    </ul>
                     </a>
+                    <span class="copyright-phrase">©Favourite Games - 2024</span>
                 </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <div class="container">
-                <div class="footer_inner">
-                    <div class="first_block">
-                        <div class="footer_logotype">
-                            <div class="filter_logo">Bleach</div>
-                            <div class="logo">Bleach</div>
-                        </div>
-                        <span>Designed by Adilet</span>
-                        <ul class="footer_menu">
-                            <li>
-                                <a href="">
-                                    <img src="images/github.svg" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="images/telegramm.svg" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                        <span class="copyright">©2024</span>
-                    </div>
-                    <div class="second_block">
-                        <div class="pages">
-                            <span>Страницы</span>
-                            <a href="index.html">Главная</a>
-                            <a href="pages/home_works.html">Бронь билетов</a>
-                            <a href="pages/lessons.html">Премьера</a>
-                        </div>
-                        <div class="pages">
-                            <span>Страницы</span>
-                            <a href="pages/characters.html">Персонажи</a>
-                            <a href="pages/cards.html">Карточки</a>
-                            <a href="pages/game.html">Игра</a>
-                        </div>
+                <div class="right">
+                    <div class="pages">
+                        <span>Pages</span>
+                        <a href="index.html">Home (ˉ﹃ˉ)</a>
+                        <a href="pages/characters.html">Characters (⌐■_■)</a>
+                        <a href="pages/mini-games.html">Mini-Games (T_T)</a>
+                        <a href="pages/lessons.html">Lessons (•_•)</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
 
 
-    <!-- CHANGE MODAL -->
+
+    <!-- MODAL -->
     <div class="modal">
         <div class="modal_dialog">
             <div class="modal_content">
@@ -249,6 +240,7 @@
             </div>
         </div>
     </div>
+        <!-- </div> -->
 
 </body>
 <script src="js/main.js"></script>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Divinity: Original Sin 2</title>
+
+    <script src="/GameSearchProject/libs/gsap/gsap.min.js"></script>
+    <script src="/GameSearchProject/libs/gsap/ScrollTrigger.min.js"></script>
+    <script src="/GameSearchProject/libs/gsap/ScrollSmoother.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <!-- <link rel="stylesheet" href="../css/core.css"> -->
+    <link rel="stylesheet" href="../css/tab-slider/divinity.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/modal.css">
+
+    <script src="/GameSearchProject/js/modal.js" defer></script>
+    <script src="/GameSearchProject/js/divinity.js" defer></script>
+
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="/GameSearchProject/index.html" class="logo">Main</a>
+
+        <nav class="navbar">
+            <a href="/GameSearchProject/pages/characters.html">Characters</a>
+            <a href="/GameSearchProject/pages/mini-games.html">Mini-Games</a>
+            <a href="/GameSearchProject/pages/lessons.html">Lessons</a>
+        </nav>
+        <button class="btn-click" id="btn-get">Convert</button>
+    </header>
+
+    <div class="wrapper">
+        <div class="content">
+            <header class="hero-section">
+
+                <img data-speed=".6" class="hero" src="../src/divinity/divinity-header.png">
+
+                <div class="container">
+                    <div class="main-header">
+                        <h1 data-speed=".85" class="main-title">Divinity: Original Sin 2 DE</h1>
+                    </div>
+                </div>
+            </header>
+
+
+            <div class="portfolio">
+                <div class="container">
+                    <main class="gallery">
+                        <div data-speed=".9" class="gallery__left">
+
+                            <img class="gallery__item" src="../src/divinity/larian-studios.png">
+
+                            <div class="text_block gallery__item">
+                                <h2 class="text_block__h">Who do you want to become?</h2>
+                                <p class="text_block__p">
+                                    An elf who eats the flesh of his fellows? A royal lizard? A corpse risen from the
+                                    grave?
+                                    The
+                                    world around you will react to you depending on your choice.
+                                </p>
+                            </div>
+
+                            <img class="gallery__item gallery__item__god" src="../src/divinity/god.png">
+
+                            <div class="text_block gallery__item">
+                                <h2 class="text_block__h">Buy Divinity Original Sin 2 Definitive_Edition</h2>
+                                <p class="text_block__p">
+                                    <a href="https://store.steampowered.com/app/435150/Divinity_Original_Sin_2__Definitive_Edition/" target="_blank"
+                                        class="btn-buy">$24.99 USD</a>
+                                </p>
+                            </div>
+
+
+                        </div>
+
+
+                        <div data-speed="1.05" class="gallery__right">
+
+                            <div class="text_block gallery__item">
+                                <h2 class="text_block__h">Larian Studios</h2>
+                                <p class="text_block__p">
+                                    is a Belgian video game development and publishing company founded in 1996 by
+                                    Sven Vincke. It primarily produces role-playing games, having previously
+                                    released a
+                                    number
+                                    of
+                                    educational games.
+                                </p>
+                            </div>
+
+                            <img class="gallery__item" src="../src/divinity/races.jpg" alt="">
+
+                            <div class="text_block gallery__item">
+                                <h2 class="text_block__h">Become the god Rivellon so desperately needs.</h2>
+                                <p class="text_block__p">
+                                    Explore the vast world of Rivellon alone or with friends. Up to 4 players can
+                                    play at
+                                    once,
+                                    and drop in and out at any time. Go anywhere, let your imagination run wild, and
+                                    explore
+                                    the
+                                    endless ways to interact with the game world. And after your adventures in
+                                    Rivellon,
+                                    there's
+                                    a new PvP mode and Game Master mode waiting for you!
+                                </p>
+                            </div>
+
+                            <div class="text_block gallery__item vid">
+                                <h2 class="text_block__vid_h">Игромания video review</h2>
+                                <p class="text_block__vid">
+                                    <iframe width="600" height="320"
+                                        src="https://www.youtube.com/embed/JZEGJE76a9w?si=qeAlMVWi1eCnRMm8"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </p>
+                            </div>
+
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- почему-то гелери притягивает в топ 37.00 -->
+
+    <!-- MODAL -->
+    <div class="modal">
+        <div class="modal_dialog">
+            <div class="modal_content">
+                <div class="modal_close">&times;</div>
+                <div class="converter">
+                    <h3>CONVERTER</h3>
+                    <div class="inner_converter">
+                        <div class="som">
+                            <label for="som">KGS</label>
+                            <input type="number" id="som">
+                        </div>
+                        <div class="kzt">
+                            <label for="kzt">KZT</label>
+                            <input type="number" id="kzt">
+                        </div>
+                        <div class="rub">
+                            <label for="rub">RUB</label>
+                            <input type="number" id="rub">
+                        </div>
+                        <div class="usd">
+                            <label for="usd">USD</label>
+                            <input type="number" id="usd">
+                        </div>
+                        <div class="eur">
+                            <label for="eur">EUR</label>
+                            <input type="number" id="eur">
+                        </div>
+                        <div class="gbp">
+                            <label for="gbp">GBP</label>
+                            <input type="number" id="gbp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

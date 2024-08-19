@@ -10,62 +10,9 @@ body {
     font-family: "Montserrat";
     font-style: normal;
     font-size: 400;
-    background-color: #fffb00;
+    background-color: #182225;
     color: #fff;
     line-height: 1.55;
-}
-
-/* HEADER */
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 200;
-    transition: .4s linear;
-}
-
-.header.hide {
-    transform: translateY(-100px);
-}
-
-.logo {
-    font-size: 32px;
-    color: #fff;
-    text-shadow: 0 0 15px #6b6b6b;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.navbar a {
-    position: relative;
-    font-size: 18px;
-    color: #fff;
-    text-shadow: 0 0 25px #000000;
-    font-weight: 400;
-    text-decoration: none;
-    margin-left: 40px;
-}
-
-.navbar a::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: 0.3s;
-}
-
-.navbar a:hover::before {
-    width: 100%;
 }
 
 /* BUTTON CLICK */
@@ -102,68 +49,6 @@ body {
 }
 
 
-/* MODAL */
-
-.modal {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 4;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    display: none;
-}
-
-.modal_dialog {
-    max-width: 500px;
-    margin: 200px auto;
-}
-
-.modal_content {
-    position: relative;
-    width: 100%;
-    padding: 40px;
-    background-color: black;
-    border: 2px solid var(--orange);
-    border-radius: 4px;
-    max-height: 80vh;
-    overflow-y: auto;
-}
-
-.modal_content form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.modal_close {
-    position: absolute;
-    top: 8px;
-    right: 14px;
-    font-size: 30px;
-    color: red;
-    opacity: 0.5;
-    font-weight: 700;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.modal_title {
-    text-align: center;
-    font-size: 22px;
-    text-transform: uppercase;
-    color: white;
-}
-
-.modal_input,
-.btn_min {
-    width: 100% !important;
-    margin-top: 10px;
-}
-
 /* NEW */
 
 :root {
@@ -180,19 +65,19 @@ body {
     position: absolute;
     width: 100%;
     height: calc(var(--index) * 10);
-    background-image: url('../../src/parallax_cyberpunk_pics/divider.png');
+    background-image: url('../../src/parallax_witcher_pics/tsyri/divider.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    bottom: calc(var(--index) * -5);
-    z-index: 3;
+    bottom: calc(var(--index) * 27);
+    z-index: 99;
 }
 
 .layers {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -224,18 +109,23 @@ body {
 
 .layer__frontA {
     width: 100%;
-    transform: translate3d(0, calc(var(--scrollTop) / -3.3), 0);
+    transform: translate3d(0, calc(var(--scrollTop) / 30), 0);
+    z-index: 2;
+}
+.layer__frontB {
+    width: 100%;
+    transform: translate3d(0, calc(var(--scrollTop) / 50), 0);
     z-index: 3;
 }
 
 .layer__header {
-    z-index: 1;
-    transform: translate3d(0, calc(var(--scrollTop) / 1.75), 0);
+    transform: translate3d(0, calc(var(--scrollTop) / 1.2), 0);
     text-transform: uppercase;
     font-weight: 700;
-    color: #ffffff;
-    text-shadow: 0 0 15px #747200;
+    color: #c53838;
+    text-shadow: 0 0 15px #8f4037;
     transition: var(--transition);
+    z-index: 1;
     will-change: transform;
 }
 
@@ -260,7 +150,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     text-align: center;
 }
 
@@ -280,12 +170,34 @@ body {
     transition: var(--transition);
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3vw;
+    z-index: 3;
+}
+
+.review-sign {
+    text-decoration: none;
+    color: #fff;
+    font-size: calc(var(--index) * 1);
+    margin-top: 3vh;
+    transition: text-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.review-sign:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 25px #c50505;
+}
+
 .btn-buy {
     display: inline-block;
-    padding: 12px 24px;
+    padding: calc(var(--index) * 0.4) calc(var(--index) * 0.75);
     background-color: #3b9c39;
     color: #fff;
-    font-size: 18px;
+    font-size: calc(var(--index) * 0.60);
     font-weight: bold;
     text-align: center;
     border: none;
@@ -325,4 +237,5 @@ body {
     opacity: .45;
     font-size: calc(var(--index) * 0.75);
     letter-spacing: calc(var(--index) / 37.5);
+    z-index: 99;
 }
