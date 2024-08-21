@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/header_footer.css">
 
+    <script src="js/main.js" defer></script>
+    <script src="js/modal.js" defer></script>
+
+
 </head>
 
 <body>
@@ -27,22 +31,6 @@
         </nav>
         <button class="btn-click" id="btn-get">Convert</button>
     </header>
-
-    <div class="main_block">
-        <div class="container">
-            <div class="inner_main">
-                <h1>"The right man in the wrong place makes all the difference in the world"- <strong
-                        id="js-color">GMAN</strong></h1>
-                <!-- <h1>I used to be an <strong id="js-color">adventurer</strong> like you, then I took an arrow in the knee.</h1> -->
-                <div class="colors-buttons">
-                    <button class="btn btn-color"></button>
-                    <button class="btn btn-color"></button>
-                    <button class="btn btn-color"></button>
-                    <button class="btn btn-color"></button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- TAB-SLIDER -->
     <div class="tab-slider">
@@ -105,7 +93,7 @@
                             heroes, and even after thousands of hours, there is still much to learn. Thanks to regular
                             updates, the game lives its own life: gameplay, features, and heroes are constantly
                             changing.</p>
-                        <a href="#" class="btnTabSlider">View more</a>
+                        <a href="pages/dota.html" class="btnTabSlider">View more</a>
                     </div>
                 </div>
             </div>
@@ -118,45 +106,129 @@
         </ul>
     </div>
 
-    <!-- SLIDER -->
-    <!-- <div class="slider_block">
+    <!-- MAIN-BLOCK -->
+    <div class="main_block">
         <div class="container">
-            <div class="inner_slider">
-                <div class="slider">
-                    <button class="btn-slide" id="prev">&lt;prev</button>
-                    <div class="slide active_slide">
-                        <div class="slide_card">
-                            <h3>regular expression</h3>
-                            <p>Простыми словами, регулярное выражение - это набор символов, который задает определенные правила для поиска и сопоставления текста. Вы можете использовать регулярные выражения, чтобы найти определенные строки в тексте, заменить части строки на другие значения или извлечь нужную информацию из текста.</p>
-                            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_expressions" target="_blank">узнать подробнее</a>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide_card">
-                            <h3>recursion</h3>
-                            <p>Простыми словами, рекурсия - это, когда функция делает повторяющиеся вызовы самой себя для решения задачи, пока не достигнет определенного условия выхода из рекурсии.</p>
-                            <a href="https://learn.javascript.ru/recursion" target="_blank">узнать подробнее</a>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide_card">
-                            <h3>json</h3>
-                            <p>Простыми словами, JSON - это способ представления данных в виде текста, чтобы они могли быть легко поняты и использованы различными программами. Он использует простые правила для описания объектов и массивов, а также для представления простых типов данных, таких как строки, числа, логические значения и т.д.</p>
-                            <a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/Objects/JSON" target="_blank">узнать подробнее</a>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide_card">
-                            <h3>event loop</h3>
-                            <p>Простыми словами, event loop похож на дежурного, который непрерывно проверяет, произошло ли какое-либо событие, и реагирует на него, когда оно происходит. Он имеет список задач, которые нужно выполнить, и он перебирает этот список событий одно за другим, обрабатывая каждое событие, когда оно наступает.</p>
-                            <a href="https://highload.today/kak-ustroen-event-loop-v-javascript-parallelnaya-model-i-tsikl-sobytij/" target="_blank">узнать подробнее</a>
-                        </div>
-                    </div>
-                    <button class="btn-slide" id="next">next&gt;</button>
+            <div class="inner_main">
+                <h1>"The right man in the wrong place makes all the difference in the world"- <strong
+                        id="js-color">GMAN</strong></h1>
+                <!-- <h1>I used to be an <strong id="js-color">adventurer</strong> like you, then I took an arrow in the knee.</h1> -->
+                <div class="colors-buttons">
+                    <button class="btn btn-color"></button>
+                    <button class="btn btn-color"></button>
+                    <button class="btn btn-color"></button>
+                    <button class="btn btn-color"></button>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
+
+
+
+    <!-- SWIPER-CAROUSEL -->
+
+    <div class="carousel">
+        <div class="img-box-swiper">
+            <div class="img-list">
+                <div class="img-slider">
+                    <div class="img-item active" style="--i:1;">
+                        <div class="item-swiper">
+                            <img src="src/swiper/useable/tsyriFHD.png" alt="">
+                        </div>
+                    </div>
+                    <div class="img-item" style="--i:2;">
+                        <div class="item-swiper">
+                            <img src="src/swiper/useable/johnnysilverhand.png" alt="">
+                        </div>
+                    </div>
+                    <div class="img-item" style="--i:3;">
+                        <div class="item-swiper">
+                            <img src="src/swiper/useable/divinity-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="img-item" style="--i:4;">
+                        <div class="item-swiper">
+                            <img src="src/swiper/useable/rubick-arcana-dota-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="info-box-swiper">
+            <div class="info-item-swiper active">
+                <h2></h2>
+                <h2></h2>
+                <div class="colors">
+                    <span class="active">
+                        <p></p>
+                    </span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p class="bio"></p>
+                <a href="#" class="swiper-btn">More info</a>
+            </div>
+
+            <div class="info-item-swiper">
+                <h2></h2>
+                <h2></h2>
+                <div class="colors">
+                    <span></span>
+                    <span class="active">
+                        <p></p>
+                    </span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p class="bio"></p>
+                <a href="#" class="swiper-btn">More info</a>
+            </div>
+
+            <div class="info-item-swiper">
+                <h2></h2>
+                <h2></h2>
+                <div class="colors">
+                    <span></span>
+                    <span></span>
+                    <span class="active">
+                        <p></p>
+                    </span>
+                    <span></span>
+                </div>
+                <p class="bio"></p>
+                <a href="#" class="swiper-btn">More info</a>
+            </div>
+
+            <div class="info-item-swiper">
+                <h2></h2>
+                <h2></h2>
+                <div class="colors">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="active">
+                        <p></p>
+                    </span>
+                </div>
+                <p class="bio"></p>
+                <a href="#" class="swiper-btn">More info</a>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <span class="prev-btn">
+                <p>BACK</p>
+            </span>
+            <span class="next-btn">
+                <p>NEXT</p>
+            </span>
+        </div>
+    </div>
+
+    <!-- <video src="src/swiper/smoke-background-optimized.mp4" class="showcase__video" autoplay loop muted></video> -->
 
     <!-- BOTTLE -->
     <div class="botlle">
@@ -171,6 +243,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- FOOTER -->
     <div class="footer">
@@ -240,10 +313,8 @@
             </div>
         </div>
     </div>
-        <!-- </div> -->
+    <!-- </div> -->
 
 </body>
-<script src="js/main.js"></script>
-<script src="js/modal.js"></script>
 
 </html>

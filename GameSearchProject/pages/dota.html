@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DOTA 2</title>
+
+    <script src="/GameSearchProject/libs/gsap/gsap.min.js"></script>
+    <script src="/GameSearchProject/libs/gsap/ScrollTrigger.min.js"></script>
+    <script src="/GameSearchProject/libs/gsap/ScrollSmoother.min.js"></script>
+
+    <link rel="stylesheet" href="../css/tab-slider/dota.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/modal.css">
+
+    <script src="/GameSearchProject/js/modal.js" defer></script>
+    <script src="/GameSearchProject/js/divinity_dota.js" defer></script>
+
+
+</head>
+
+<body>
+    <audio src='../src/music/DOTA2.mp3' autoplay='autoplay' loop='loop'></audio>
+
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="/GameSearchProject/index.html" class="logo">Main</a>
+
+        <nav class="navbar">
+            <a href="/GameSearchProject/pages/characters.html">Characters</a>
+            <a href="/GameSearchProject/pages/mini-games.html">Mini-Games</a>
+            <a href="/GameSearchProject/pages/lessons.html">Lessons</a>
+        </nav>
+        <button class="btn-click" id="btn-get">Convert</button>
+    </header>
+
+    <div class="wrapper">
+        <div class="content">
+            <header class="hero-section">
+
+                <img data-speed=".6" class="hero" src="../src/dota 2/header.png">
+
+                <div class="container">
+                    <div class="main-header">
+                        <h1 data-speed=".85" class="main-title"><span>D</span>efence <span>O</span>f ※⁜ <span>T</span>he
+                            ⁜※ <span>A</span>ncients</h1>
+                    </div>
+                </div>
+            </header>
+
+
+            <div class="portfolio">
+                <div class="container">
+                    <main class="gallery">
+                        <div data-speed=".9" class="gallery__left">
+
+                            <img class="gallery__item" src="../src/dota 2/valve.gif" alt="я джифка">
+
+                            <div class="text_block gallery__item">
+                                <h2 class="text_block__h">One battlefield, endless possibilities</h2>
+                                <p class="text_block__p">
+                                    The game boasts an endless variety of heroes, abilities, and items, making every
+                                    match unique. Each hero can play multiple roles, and there are items for every need.
+                                    There are no limits here - you choose which strategy to follow.
+                                </p>
+                            </div>
+
+                            <img class="gallery__item gallery__item__heroes" src="../src/dota 2/heroes.png">
+
+                            <div class="text_block gallery__item">
+                                <h2 class="text_block__h">DOTA 2 - Download for free</h2>
+                                <p class="text_block__p">
+                                    <a href="https://store.steampowered.com/app/570/Dota_2/"
+                                        target="_blank" class="btn-buy">Free to play</a>
+                                </p>
+                            </div>
+
+
+                        </div>
+
+
+                        <div data-speed="1.05" class="gallery__right">
+
+                            <div class="text_block gallery__item">
+                                <h2 class="text_block__h">Valve Corporation</h2>
+                                <p class="text_block__p">
+                                    is an American privately held company that develops, publishes,
+                                    and digitally distributes computer games.
+                                </p>
+                            </div>
+
+                            <img class="gallery__item" src="../src/dota 2/battlefield.jpg" alt="">
+
+                            <div class="text_block gallery__item">
+                                <h2 class="text_block__h">There are 123 heroes in the game</h2>
+                                <p class="text_block__p">
+                                    All heroes are free!
+                                    Equal competitive opportunities are the game's main pride. To ensure that everyone
+                                    is on the same page, its core — in particular, the extensive roster of heroes — is
+                                    available to every player. If you want, you can collect items that modify both the
+                                    heroes and the world around them, but everything you need for your first match is
+                                    already in the game.
+                                </p>
+                            </div>
+
+                            <div class="text_block gallery__item vid">
+                                <h2 class="text_block__vid_h">Bitochek video review</h2>
+                                <p class="text_block__vid">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/ryEUr-q9kU0?si=nfNjsCXSXomvTybQ"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </p>
+                            </div>
+
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- почему-то гелери притягивает в топ 37.00 -->
+
+    <!-- MODAL -->
+    <div class="modal">
+        <div class="modal_dialog">
+            <div class="modal_content">
+                <div class="modal_close">&times;</div>
+                <div class="converter">
+                    <h3>CONVERTER</h3>
+                    <div class="inner_converter">
+                        <div class="som">
+                            <label for="som">KGS</label>
+                            <input type="number" id="som">
+                        </div>
+                        <div class="kzt">
+                            <label for="kzt">KZT</label>
+                            <input type="number" id="kzt">
+                        </div>
+                        <div class="rub">
+                            <label for="rub">RUB</label>
+                            <input type="number" id="rub">
+                        </div>
+                        <div class="usd">
+                            <label for="usd">USD</label>
+                            <input type="number" id="usd">
+                        </div>
+                        <div class="eur">
+                            <label for="eur">EUR</label>
+                            <input type="number" id="eur">
+                        </div>
+                        <div class="gbp">
+                            <label for="gbp">GBP</label>
+                            <input type="number" id="gbp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

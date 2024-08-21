@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
+
 body {
     font-family: "Montserrat";
     font-style: normal;
@@ -15,62 +20,72 @@ body {
     line-height: 1.55;
 }
 
-/* BUTTON CLICK */
-.btn-click {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #000000;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    outline: none;
+html, body {
+	height: 100%;
+	background-color: #000;
 }
-
-.btn-click:hover {
-    background-color: #656565;
-    transform: translateY(-2px);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.btn-click:active {
-    transform: translateY(2px);
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn-click:focus {
-    outline: none;
-    box-shadow: 0px 0px 0px 4px rgba(52, 152, 219, 0.4);
-}
-
-
-/* NEW */
 
 :root {
     --index: calc(1vw + 1vh);
-    --transition: transform .75 cubic-bezier(.075, .5, 0, 1);
+	--transition: 1.75s cubic-bezier(.2, .6, 0, 1);
+}
+
+.slider {
+	height: 100%;
+}
+
+.slider__layer {
+	position: absolute;
+	inset: 0;
+	background-size: cover;
+	background-position: center;
+	will-change: transform;
+	transition: var(--transition)!important;
+}
+
+.slider__layer::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	box-shadow: inset 0 0 250px rgb(0 0 0 / .3);
+}
+
+.slider__item {
+	overflow: hidden;
+}
+
+.slider__wrapper {
+	will-change: transform;
+	transform-style: preserve-3d;
+	transition: var(--transition)!important;
+}
+
+
+.layer__header {
+    transform: translate3d(0, calc(var(--scrollTop) / 1.2), 0);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 0 15px #8f4037;
+    transition: var(--transition);
+    z-index: 1;
+    will-change: transform;
+    z-index: 10;
+}
+
+.layer__title {
+    font-size: calc(var(--index) * 3);
+    letter-spacing: calc(var(--index) / 5);
+}
+
+.layer__caption {
+    font-size: calc(var(--index) * 1);
+    letter-spacing: calc(var(--index) / 2);
 }
 
 .main-header {
     position: relative;
-}
-
-.main-header::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: calc(var(--index) * 10);
-    background-image: url('../../src/parallax_witcher_pics/tsyri/divider.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    bottom: calc(var(--index) * 27);
-    z-index: 99;
 }
 
 .layers {
@@ -82,64 +97,6 @@ body {
     overflow: hidden;
     position: relative;
 }
-
-.layer {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-size: cover;
-    background-position: center;
-    z-index: 2;
-    transition: var(--transition);
-    will-change: transform;
-}
-
-.layer__base {
-    transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
-    z-index: 0;
-}
-
-.layer__middle {
-    transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
-}
-
-.layer__front {
-    transform: translate3d(0, calc(var(--scrollTop) / 2.8), 0);
-}
-
-.layer__frontA {
-    width: 100%;
-    transform: translate3d(0, calc(var(--scrollTop) / 30), 0);
-    z-index: 2;
-}
-.layer__frontB {
-    width: 100%;
-    transform: translate3d(0, calc(var(--scrollTop) / 50), 0);
-    z-index: 3;
-}
-
-.layer__header {
-    transform: translate3d(0, calc(var(--scrollTop) / 1.2), 0);
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #c53838;
-    text-shadow: 0 0 15px #8f4037;
-    transition: var(--transition);
-    z-index: 1;
-    will-change: transform;
-}
-
-.layer__title {
-    font-size: calc(var(--index) * 3);
-    letter-spacing: calc(var(--index) / 5);
-}
-
-.layer__caption {
-    font-size: calc(var(--index) * 1);
-    letter-spacing: calc(var(--index) / 2);
-    /* margin-top: translate3d(0, calc(var(--scrollTop) * -1), 0); */
-}
-
 .main-article {
     position: relative;
     min-height: 100vh;
@@ -152,6 +109,7 @@ body {
     justify-content: center;
     align-items: end;
     text-align: center;
+    z-index: 10;
 }
 
 .main-article__header {
@@ -178,7 +136,6 @@ body {
     margin-right: 3vw;
     z-index: 3;
 }
-
 .review-sign {
     text-decoration: none;
     color: #fff;
@@ -227,9 +184,7 @@ body {
     box-shadow: 0px 0px 0px 4px rgba(52, 152, 219, 0.4);
 }
 
-.content {
-    will-change: transform;
-}
+
 
 .copy{
     position: absolute;

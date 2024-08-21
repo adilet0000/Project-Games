@@ -18,7 +18,7 @@ const closeModal = () => {
 modalTrigger.onclick = () => openModal();
 modalCloseBtn.onclick = () => closeModal();
 modal.onclick = (event) => {
-    if(event.target === modal) {
+    if (event.target === modal) {
         closeModal();
     };
 };
@@ -28,7 +28,7 @@ modal.onclick = (event) => {
 
 const setLimit = (callback, limit) => { // функция из инета, чтобы не было миллиард ивентов при прокрутке
     let wait = true;
-    return function() {
+    return function () {
         if (!wait) {
             callback.call();
             wait = true;
@@ -70,31 +70,47 @@ const inputs = [$somInput, $kztInput, $rubInput, $usdInput, $eurInput, $gbpInput
 // юзаем API по уроку "Конвертер валют на JavaScript. Полный урок. Актуальные курсы"
 
 // https://data.fx.kg/api/v1/central - курс по Центральному Банку
-// 9fAIn2lklRcQOOUl8wBLrQ6NVFYbMyWAlhTh8Uqb868ed5c1 - KGS - токен
+// TGA3wzZp30LRjY2OYiuQy4NEYfl1754McUBCQ04E4b513c72 - KGS-2 - токен
 
 const rates = {};
 
 
-const token = "9fAIn2lklRcQOOUl8wBLrQ6NVFYbMyWAlhTh8Uqb868ed5c1"
+const token = "TGA3wzZp30LRjY2OYiuQy4NEYfl1754McUBCQ04E4b513c72";
 
 async function getCurrencies() {
-    const response = await fetch('https://data.fx.kg/api/v1/central', {
-        headers: {
-            'Authorization': 'Bearer ' + token
+    try {
+        const response = await fetch('https://data.fx.kg/api/v1/central', {
+            headers: {
+                'Authorization': 'Bearer ' + token
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error('No response'); // для проверки, успешен ли запрос, если нет, выбрасывается ошибка
         }
-    });
-    const data = await response.json();
-    const result = await data;
 
-    rates.USD = result.usd;
-    rates.EUR = result.eur;
-    rates.GBP = result.gbp;
-    rates.RUB = result.rub;
-    rates.KZT = result.kzt;
-    rates.SOM = 1;
+        const data = await response.json();
 
+        rates.USD = data.usd;
+        rates.EUR = data.eur;
+        rates.GBP = data.gbp;
+        rates.RUB = data.rub;
+        rates.KZT = data.kzt;
+        rates.SOM = 1;
+
+    } catch (error) {
+        rates.USD = "87.3231";
+        rates.EUR = "95.1036";
+        rates.GBP = "110.8733";
+        rates.RUB = "1.0323";
+        rates.KZT = "0.1940";
+        rates.SOM = "1";
+
+        console.error('Слишком много раз использовал API за месяц(макс. 1000 запросов):', error);
+    }
     return rates;
-};
+}
+
 
 
 getCurrencies().then(() => {
@@ -135,7 +151,10 @@ getCurrencies().then(() => {
     });
 });
 
-/*getCurrencies().then((data) => {
+
+/*
+getCurrencies().then((data) => {
     console.log('Данные курсов валют:', data);
     console.log('Объект rates:', rates);
-});проверка*/
+});
+*/

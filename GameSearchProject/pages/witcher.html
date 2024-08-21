@@ -14,8 +14,12 @@
     <script src="../libs/gsap/gsap.min.js" defer></script>
     <script src="../libs/gsap/ScrollTrigger.min.js" defer></script>
     <script src="../libs/gsap/ScrollSmoother.min.js" defer></script>
+    
+    <link rel="stylesheet" href="../libs/swiper/swiper-bundle.min.css">
+	<script src="../libs/swiper/swiper-bundle.min.js" defer></script>
+	<script src="../libs/particles/particles.js" defer></script>
 
-    <script src="../js/parallax.js" defer></script>
+    <script src="../js/wParallax.js" defer></script>
     <script src="../js/modal.js" defer></script>
 
 </head>
@@ -36,7 +40,7 @@
         <button class="btn-click" id="btn-get">Convert</button>
     </header>
 
-    <div class="wrapper">
+    <!-- <div class="wrapper">
         <div class="content">
             <div class="main-header">
                 <div class="layers">
@@ -52,12 +56,7 @@
                         style="background-image: url(../src/parallax_witcher_pics/swords/layer-front.png);"></div>
                 </div>
 
-                <article class="main-article"
-                    style="background-image: url('../src/parallax_witcher_pics/tsyri/layer-back.png');">
-                    <div class="layer layer__frontA"
-                        style="background-image: url(../src/parallax_witcher_pics/tsyri/layer-middle.png);"></div>
-                    <div class="layer layer__frontB"
-                        style="background-image: url(../src/parallax_witcher_pics/tsyri/layer-front.png);"></div>
+                <article class="main-article">
                     <div class="main-article__content">
                         <h2 class="main-article__header">Play Now</h2>
                         <p class="main-article__paragraph">People don't trust them, but they are the only thing standing
@@ -76,6 +75,62 @@
                         </div>
                     <div class="copy">©Adilet</div>
                 </article>
+            </div>
+        </div> -->
+
+        <div class="swiper slider">
+            <div class="swiper-wrapper slider__wrapper">
+    
+                <div class="swiper-slide slider__item">
+                    <div class="main-header">
+                        <div class="layers">
+                            <div class="layer__header">
+                                <div class="layer__caption">The Witcher 3</div>
+                                <div class="layer__title">Wild Hunt</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(../src/parallax_witcher_pics/horseG/layer-back.jpg);"></div>
+                    <div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(../src/parallax_witcher_pics/horseG/layer-middle.png);"></div>
+                    <canvas class="particles slider__layer" data-swiper-parallax="18%" data-color="#BE9164"></canvas>
+                    <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(../src/parallax_witcher_pics/horseG/layer-front.png);"></div>
+                </div>
+    
+                <div class="swiper-slide slider__item">
+                    <div class="slider__layer" data-swiper-parallax="40%" style="background-image: url(../src/parallax_witcher_pics/YenG/layer-back.jpg);"></div>
+                    <div class="slider__layer" data-swiper-parallax="34%" style="background-image: url(../src/parallax_witcher_pics/YenG/layer-gera.png);"></div>
+                    <div class="slider__layer" data-swiper-parallax="30%" style="background-image: url(../src/parallax_witcher_pics/YenG/layer-yen.png);"></div>
+                    <canvas class="particles slider__layer" data-swiper-parallax="20%" data-color="#525A6D"></canvas>
+                    <div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(../src/parallax_witcher_pics/YenG/layer-front.png);"></div>
+                </div>
+    
+                <div class="swiper-slide slider__item">
+                    <article class="main-article">
+                        <div class="main-article__content">
+                            <h2 class="main-article__header">Play Now</h2>
+                            <p class="main-article__paragraph">People don't trust them, but they are the only thing standing
+                                between humanity and cruel monsters.
+    
+                                •Become a professional monster hunter to inflict bloody reprisals on them using a diverse
+                                arsenal of upgradeable weapons, alchemical potions, and combat magic.
+    
+                                •Track down a variety of unusual monsters - from wild animals in mountain passes to
+                                terrifying supernatural predators in the dark alleys of densely populated cities.</p>
+                            </div>
+                            <div class="info">
+                                <a class="review-sign" href="https://www.youtube.com/embed/_dASbzM5eu8?si=-te3H--hh8cAYn6Y" target="_blank">WATCH REVIEW</a>
+                                <a href="https://store.steampowered.com/app/292030/_3/" target="_blank" class="btn-buy">$19.99
+                                    USD</a>
+                            </div>
+                        <div class="copy">©FGames</div>
+                    </article>
+                    <div class="slider__layer" data-swiper-parallax="48%" style="background-image: url(../src/parallax_witcher_pics/Ciri/layer-back.jpg);"></div>
+                    <div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(../src/parallax_witcher_pics/Ciri/layer-middle.png);"></div>
+                    <div class="slider__layer" data-swiper-parallax="29%" style="background-image: url(../src/parallax_witcher_pics/Ciri/layer-ciri.png);"></div>
+                    <canvas class="particles slider__layer" data-swiper-parallax="25%" data-color="#938086"></canvas>
+                    <div class="slider__layer" data-swiper-parallax="16%" style="background-image: url(../src/parallax_witcher_pics/Ciri/layer-front.png);"></div>
+                </div>
+    
             </div>
         </div>
 

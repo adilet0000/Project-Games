@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Ciri",
+        "age": "16y.o.",
+        "color": "The Witcher 3: Wild Hunt",
+        "bio": "Cirilla Fiona Elen Riannon, the legendary 'Surprise Child', promised to the witcher Geralt of Rivia by her father for dispelling the spell during a feast at Calanthe's court. Cirilla and Avallac'h, in another world, decide to return to the Continent in the world of Aen Seidhe and seek help from Ciri's friends in the fight against the Wild Hunt that is hot on their heels.",
+        "link": "pages/characters.html"
+    },
+    {
+        "name": "Johny Silverhand",
+        "age": "88y.o.",
+        "color": "Cyberpunk 2077",
+        "bio": "Johnny Silverhand, real name Robert John Linder, is a famous rocker, frontman, lead vocalist and founder of the rock band Samurai, a staunch opponent of the Arasaka Corporation, a terrorist who carried out the Arasaka Tower bombing on August 20, 2023, a deserter from the US Army and a participant in the Second Central American War in Nicaragua.",
+        "link": "pages/characters.html"
+    },
+    {
+        "name": "Fain",
+        "age": "Unknown",
+        "color": "The Witcher 3: Wild Hunt",
+        "bio": "Fain is a once-outstanding scientist, now the last representative of his race, who called themselves the Eternals, which is not surprising, since its representatives, along with the highest progress, achieved immortality. He made an epochal discovery: he discovered the Veil, consisting entirely of the Source and separating the world from... something.",
+        "link": "pages/characters.html"
+    },
+    {
+        "name": "Rubick",
+        "age": "Unknown",
+        "color": "The Witcher 3: Wild Hunt",
+        "bio": "Rubick - known in the highest circles of sorcerers as a duelist and a scholar, never thought he had the makings of a mage until he was assassinated for the seventh time. He realized how hopelessly uninteresting the attempts on his life had become. Before, a sudden snap of a finger or a fire igniting on his hand made him happy, but now everything had become terribly predictable.",
+        "link": "pages/characters.html"
+    }
+]
