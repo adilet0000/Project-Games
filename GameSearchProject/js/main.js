@@ -22,11 +22,11 @@ window.addEventListener('scroll', () => {
 // Чтобы не скроллилось ниже футера
 function preventScrollBelow(blockSelector) {
     const block = document.querySelector(blockSelector);
-    
+
     window.addEventListener('scroll', () => {
         const blockBottom = block.getBoundingClientRect().bottom;
         const windowBottom = window.innerHeight;
-        
+
         if (blockBottom <= windowBottom) {
             window.scrollTo(0, block.offsetTop + block.offsetHeight - windowBottom);
         }
@@ -44,7 +44,7 @@ function preventHorizontalScrollOutside(blockSelector) {
         const blockLeft = block.getBoundingClientRect().left;
         const blockRight = block.getBoundingClientRect().right;
         const windowWidth = window.innerWidth;
-        
+
         // Если левая граница футера левее окна
         if (blockLeft > 0) {
             window.scrollTo(block.offsetLeft, window.scrollY);
@@ -64,35 +64,6 @@ function preventHorizontalScrollOutside(blockSelector) {
 preventHorizontalScrollOutside('.footer');
 
 
-// RANDOM COLOR GENERATOR
-const buttonsColor = document.querySelectorAll('.btn-color')
-const javaScript = document.querySelector('#js-color')
-
-const generateRandomColor = () => {
-    const hexCodes = '0123456789ABCDEF'
-    let color = ''
-    for (let i = 0; i < 6; i++) {
-        color += hexCodes[Math.floor(Math.random() * hexCodes.length)]
-    }
-    return '#' + color
-}
-
-const setRandomColors = () => {
-    buttonsColor.forEach((buttonColor) => {
-        buttonColor.innerHTML = generateRandomColor()
-        buttonColor.onclick = (event) => {
-            javaScript.style.color = event.target.innerHTML
-        }
-    })
-}
-
-window.onload = () => setRandomColors()
-window.onkeydown = (event) => {
-    if (event.code.toLowerCase() === 'space') {
-        event.preventDefault()
-        setRandomColors()
-    }
-}
 
 
 // TAB-SLIDER
@@ -170,6 +141,67 @@ function startAutoSwitch(intervalTime) {
 }
 
 startAutoSwitch(6000);
+
+
+// MAIN
+const container = document.querySelector('.inner_main');
+const phrase = container.querySelector('h1');
+const who = container.querySelector('#js-color');
+const buttonsColor = document.querySelectorAll('.btn-color');
+
+
+const getRandomInt = (max) => {
+    return Math.floor(Math.random() * max);
+};
+
+
+
+const quotesFunction = async () => {
+    try {
+        const response = await fetch('data/phrases.json');
+        const data = await response.json();
+        
+        
+        
+        const randIndex = getRandomInt(5);
+        phrase.innerHTML = data[randIndex].phrase;
+        who.innerHTML = data[randIndex].author;
+
+        setRandomColors();
+
+    } catch (error) {
+        console.log(error);
+    }
+};
+quotesFunction();
+
+// RANDOM COLOR GENERATOR
+
+const generateRandomColor = () => {
+    const hexCodes = '0123456789ABCDEF'
+    let color = ''
+    for (let i = 0; i < 6; i++) {
+        color += hexCodes[Math.floor(Math.random() * hexCodes.length)]
+    }
+    return '#' + color
+};
+
+const setRandomColors = () => {
+    buttonsColor.forEach((buttonColor) => {
+        buttonColor.innerHTML = generateRandomColor()
+        buttonColor.onclick = (event) => {
+            who.style.color = event.target.innerHTML
+        }
+    });
+};
+
+window.onload = () => quotesFunction();
+window.onkeydown = (event) => {
+    if (event.code.toLowerCase() === 'space') {
+        event.preventDefault()
+        setRandomColors()
+    };
+};
 
 
 // SWIPER
@@ -261,4 +293,3 @@ nextBtn.addEventListener('click', () => {
 
     slider();
 });
-

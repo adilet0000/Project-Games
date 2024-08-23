@@ -1,4 +1,4 @@
-// HEADER
+// !HEADER!
 const $header = document.querySelector('.header');
 const defaultOffset = 100;
 let lastScroll = 0;
@@ -15,76 +15,135 @@ window.addEventListener('scroll', () => {
     }
     lastScroll = scrollPosition();
 });
-// HW_1
-const $gmailInput = document.querySelector('#gmail_input');
-const $gmailButton = document.querySelector('#gmail_button');
-const $gmailSpan = document.querySelector('#gmail_result');
 
-const regExp = /^(?!.*\.{2,})[a-zA-Z\d][a-zA-Z\d\.]{4,28}[a-zA-Z\d]@(gmail\.com|mail\.ru)$/;
-//^(?!.*\.{2,}) — отрицательное опережающее утверждение, гарантирует отсутствие двух+ точек подряд. Если указанная в скобках часть найдена, регулярное выражение вернет false
-// .* - означает "ноль или более любых символов
+// !TYPING GAME!
 
-$gmailButton.onclick = () => {
-    if (regExp.test($gmailInput.value)) {
-        $gmailSpan.innerHTML = "Success";
-        $gmailSpan.style.color = "green";
-    } else {
-        $gmailSpan.innerHTML = "Failed";
-        $gmailSpan.style.color = "red";
-    };
+// LOREM GENERATOR
+const generateLoremIpsum = (length) => {
+    const loremWords = "Lorem ipsum dolor sit amet consectetur adipiscing elit".split(" ");
+    let lorem = "";
+    for (let i = 0; i < length; i++) {
+        lorem += loremWords[Math.floor(Math.random() * loremWords.length)] + " ";
+    }
+    return lorem.trim();
 };
 
-//HW_2
-// clietntWidth вернёт длину (width) родительского квадратика, которую видит пользователь, а родная длинa offsetWidth, то же и с height
-const $parentBlock = document.querySelector('.parent_block');
-const $childBlock = document.querySelector('.child_block');
 
-let positionX = 0;
-let positionY = 0;
-const $offsetWidth = $parentBlock.offsetWidth - $childBlock.offsetWidth;
-const $offsetHeight = $parentBlock.offsetHeight - $childBlock.offsetHeight;
+let lorem = generateLoremIpsum(25);
+let numOfSymbols = lorem.length;
 
-const moveBlock = () => {
-    requestAnimationFrame(moveBlock);
-    $childBlock.style.left = `${positionX}px`;
-    $childBlock.style.top = `${positionY}px`;
+// VARIABLES DOM
+const $textInput = document.querySelector('#text-input');
+const $textField = document.querySelector('.text-field');
+const $start_btn = document.querySelector('#start-button');
+const $typing_result = document.querySelector('#typing_result');
 
-    if (positionX < $offsetWidth && positionY === 0) positionX+=5
-    else if (positionX >= $offsetWidth && positionY < $offsetHeight) positionY+=15
-    else if (positionX > 0 && positionY > 0) positionX-=5
-    else if (positionX === 0 && positionY > 0) positionY-=15
+let strings = [lorem];
+
+
+$textInput.oninput = () => {
+    strings[1] = $textInput.value;
 };
-moveBlock(); // запись стрима 3-го урока 
 
-
-
-
-// HW_3
-const start_btn = document.querySelector('#start');
-const stop_btn = document.querySelector('#stop');
-const reset_btn = document.querySelector('#reset');
-
+// VARIABLES TIMER
 let timer = document.querySelector('#seconds');
-
 let num = 0;
 let interval = null;
+let currentState = 'start';
 
-start_btn.addEventListener('click', () => {
-    if (!interval) {
+$start_btn.addEventListener('click', () => {
+    if (currentState === 'start') {
+        // Начало
+        $textField.innerHTML = lorem;
         interval = setInterval(() => {
             timer.textContent = num++;
         }, 1000);
-    };
+        $start_btn.textContent = 'FINISH';
+        currentState = 'finish';
+
+    } else if (currentState === 'finish') {
+        // Остановка
+        clearInterval(interval);
+        interval = null;
+        if (areAllEqual(strings)) {
+            $typing_result.innerHTML = `Correct! The length is (☞ﾟヮﾟ)☞${numOfSymbols}☜(ﾟヮﾟ☜) symbols.`;
+        } else {
+            $typing_result.innerHTML = "You made a mistake! ಠ_ಠ";
+        }
+        $start_btn.textContent = 'RESET';
+        currentState = 'reset';
+
+    } else if (currentState === 'reset') {
+        // Сброс
+        clearInterval(interval);
+        interval = null;
+        num = 0;
+        timer.textContent = num;
+        lorem = generateLoremIpsum(25);
+        numOfSymbols = lorem.length;
+        strings = [lorem];
+        $textField.innerHTML = "lorem20";
+        $textInput.value = "";
+        $typing_result.innerHTML = "(▀̿Ĺ̯▀̿ ̿)";
+        $start_btn.textContent = 'START';
+        currentState = 'start';
+    }
 });
 
-stop_btn.addEventListener('click', () => {
-    clearInterval(interval, 0);
-    interval = null;
+const areAllEqual = (strings) => {
+    const regex = new RegExp(`^${strings[0]}$`); // создание регулярного выражения по строке (лорем строке)
+    return regex.test(strings[1]);
+};
+
+
+// !CLICK GAME!
+
+const $parentBlock = document.querySelector('.parent_block');
+const $childBlock = document.querySelector('.child_block');
+
+const $playAgain = document.querySelector('.play-again');
+const $congrats = document.querySelector('.congrats');
+
+const $offsetWidth = $parentBlock.offsetWidth - $childBlock.offsetWidth;
+const $offsetHeight = $parentBlock.offsetHeight - $childBlock.offsetHeight;
+
+let targetX = Math.random() * $offsetWidth;
+let targetY = Math.random() * $offsetHeight;
+let currentX = 0;
+let currentY = 0;
+
+const moveBlockRandomly = () => {
+    const speed = 0.12;
+
+
+    currentX += (targetX - currentX) * speed;
+    currentY += (targetY - currentY) * speed;
+
+    $childBlock.style.transform = `translate(${currentX}px, ${currentY}px)`;
+
+
+    if (Math.abs(targetX - currentX) < 1 && Math.abs(targetY - currentY) < 1) {
+        targetX = Math.random() * $offsetWidth;
+        targetY = Math.random() * $offsetHeight;
+    }
+
+    requestAnimationFrame(moveBlockRandomly);
+};
+
+
+$congrats.style.display = 'none';
+$playAgain.style.display = 'none';
+
+$childBlock.addEventListener('click', () => {
+    $childBlock.style.display = 'none';
+    $congrats.style.display = 'inline';
+    $playAgain.style.display = 'inline';
 });
 
-reset_btn.addEventListener('click', () => {
-    clearInterval(interval, 0);
-    interval = null;
-    num = 0;
-    timer.textContent = num;
-});
+$playAgain.onclick = () => {
+    $playAgain.style.display = 'none';
+    $congrats.style.display = 'none';
+    $childBlock.style.display = 'inline';
+}; // лучше придерживаться одного типа написания
+
+moveBlockRandomly();

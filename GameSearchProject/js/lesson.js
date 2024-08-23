@@ -35,62 +35,76 @@ $phoneButton.onclick = () => {
 
 
 
-// TAB SLIDER
-const tabContentBlocks = document.querySelectorAll('.tab_content_block');
-const tabItems = document.querySelectorAll('.tab_content_item');
-const tabParent = document.querySelector('.tab_content_items');
 
-// console.log(tabContentBlocks);
 
-const hideTabContent = () => {
-    tabContentBlocks.forEach((item) => {
-        item.style.display = 'none';
-    });
-    tabItems.forEach((item) => {
-        item.classList.remove('tab_content_item_active')
-    });
-};
+// HW
 
-const showTabContent = (index = 0) => {
-    tabContentBlocks[index].style.display = 'block';
-    tabItems[index].classList.add('tab_content_item_active')
-};
+// CARD-SWITCHER
+const $cardBlock = document.querySelector('.card');
+const $btn_next = document.querySelector('#btn-next');
+const $btn_prev = document.querySelector('#btn-prev');
+let cardId = 1;
 
-hideTabContent();
-showTabContent();
-
-tabParent.onclick = (event) => {
-    if (event.target.classList.contains('tab_content_item')) {
-        tabItems.forEach((item, index) => {
-            if (event.target === item) {
-                manualSwitch(index);
-            };
-        });
+const getInfo = async () => {
+    try {
+        const response = await fetch(`https://jsonplaceholder.typicode.com/todos/${cardId}`);
+        const data = await response.json();
+        $cardBlock.innerHTML = `
+        <p>${data.title}</p>
+        <p style="color: ${data.completed ? 'green' : 'red'}">${data.completed}</p>
+        <span>${data.id}</span>
+        `;
+    } catch (error) {
+        console.log(error);
     };
 };
 
-// HW
-let currentIndex = 0;
-let autoNextTimeout = null;
+getInfo();
 
-const manualSwitch = (i) => {
-    clearTimeout(autoNextTimeout);
-    showTab(i);
-    autoNext();
+
+$btn_next.onclick = () => {
+    // cardId = (cardId >= 1 && cardId < 200) ? cardId + 1 : 1;
+    if (cardId >= 1 && cardId < 200) {
+        cardId++;
+    } else if (cardId >= 200) {
+        cardId = 1;
+    };
+
+    getInfo();
 };
 
-const showTab = (i) => {
-    currentIndex = i;
-    hideTabContent();
-    showTabContent(i);
+$btn_prev.onclick = () => {
+    // cardId = (cardId > 1 && cardId <= 200) ? cardId - 1 : 200;
+    if (cardId > 1 && cardId <= 200) {
+        cardId--;
+    } else if (cardId <= 1) {
+        cardId = 200;
+    };
+
+    getInfo();
 };
 
-const autoNext = () => {
-    autoNextTimeout = setTimeout(() => {
-        currentIndex = (currentIndex + 1) % 5; // Остаток от деления на 5 = 0, типо если 4+1=5
-        showTab(currentIndex);
-        autoNext();
-    }, 7500);
-};
 
-autoNext()
+// WEATHER
+const $citySearchInput = document.querySelector('.cityName');
+const $searchBtn = document.querySelector('#search');
+const $cityName = document.querySelector('.city');
+const $cityTemp = document.querySelector('.temp');
+const $cityCoords = document.querySelector('.coords');
+
+const API_KEY = 'e417df62e04d3b1b111abeab19cea714';
+const API_URL = 'http://api.openweathermap.org/data/2.5/weather';
+
+$searchBtn.onclick = async () => {
+    try {
+        const response = await fetch(`${API_URL}?q=${$citySearchInput.value}&appid=${API_KEY}`) // Через интерполяцию с разными переменными грамотней чем вставлять фулл ссылку
+        const data = await response.json();
+        $cityName.innerHTML = data.name || 'City is not defined!';
+        $cityTemp.innerHTML = data.main?.temp ? Math.round(data.main?.temp - 273) + '℃' : '(☞ﾟヮﾟ)☞'  /* + '&deg;' спецсимвол*/
+        $cityCoords.innerHTML = `Lattitude: ${data.coord?.lat}N | Longitude: ${data.coord?.lon}E` || '';
+        console.log(data);
+        
+    } catch (error) {
+        console.log(error);
+    };
+};

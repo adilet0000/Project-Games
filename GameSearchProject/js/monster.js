@@ -1,5 +1,5 @@
 window.requestAnimFrame = () => {
-    return (
+    (
         window.requestAnimationFrame || function (callback) {
             window.setTimeout(callback);
         }

@@ -1,93 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Home Works</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Mini-Games</title>
+
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
     <link rel="stylesheet" href="../css/core.css">
-    <link rel="stylesheet" href="../css/home_works.css">
+    <link rel="stylesheet" href="../css/mini-games.css">
+
+    <script src="../js/mini-games.js" defer></script>
+    <script src="../js/modal.js" defer></script>
+    
 </head>
+
 <body>
 
-<div class="wrapper">
+    <!-- HEADER -->
     <header class="header">
-        <a href="/GameSearchProject/index.html" class="logo">Home</a>
+        <a href="/GameSearchProject/index.html" class="logo">Main</a>
 
         <nav class="navbar">
-            <a href="/GameSearchProject/pages/home_works.html">p1</a>
-            <a href="/GameSearchProject/pages/lessons.html">p2</a>
-            <a href="/GameSearchProject/pages/cardCharacters.html">Cards</a>
+            <a href="/GameSearchProject/pages/characters.html">Characters</a>
+            <a href="/GameSearchProject/pages/mini-games.html">Mini-Games</a>
+            <a href="/GameSearchProject/pages/lessons.html">Lessons</a>
         </nav>
-        <button class="btn-click" id="btn-get">Click!</button>
+        <button class="btn-click" id="btn-get">Convert</button>
     </header>
-    
-    <div class="gmail_block">
+
+    <!-- TYPING TEST -->
+    <div class="type_block">
         <div class="container">
-            <h3>Home work 1 (part 1)</h3>
-            <div class="inner_gmail_block">
-                <div class="form_gmail">
-                    <label for="gmail_input"></label>
-                    <input type="text" id="gmail_input" placeholder="your gmail">
-                    <button class="btn" id="gmail_button">Check gmail</button>
-                    <span class="checker" id="gmail_result"></span>
+            <h3>Type "lorem" text as fast as you can:</h3>
+
+            <p class="text-field">lorem20</p>
+
+            <div class="inner_typing_block">
+                <div class="form_type">
+                    <label for="text" class="instruction">Press FINISH as soon as you've done!</label>
+
+                    <textarea type="text" id="text-input" placeholder="Type here ㄟ( ▔, ▔ )ㄏ"></textarea>
+
+                    <button class="btn" id="start-button">START</button>
+                    <span class="checker" id="typing_result">(▀̿Ĺ̯▀̿ ̿)</span>
+                    <div class="time_block">
+                        <div class="interval" id="seconds">0</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- BOTTLE -->
+    <div class="botlle">
+        <div class="jarText">
+            <h3>Is there something inside the jar?</h3>
+        </div>
+        <div class="container">
+            <div class="bottle_inner">
+                <a href="monster.html">
+                    <div class="bowl">
+                        <div class="shadow"></div>
+                        <div class="liquid"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOVE BLOCK -->
     <div class="move_block">
         <div class="container">
-            <h3>Home work 1 (part 2)</h3>
+            <h3>Try to catch the circle</h3>
             <div class="inner_move_block">
                 <div class="parent_block">
                     <div class="child_block"></div>
                 </div>
             </div>
+            <h4 class="congrats">Mission Completed!</h4>
+            <button class="play-again btn">Play again</button>
         </div>
     </div>
 
-    <div class="stopwatch">
-        <div class="container">
-            <h3>Home work 2 </h3>
-            <div class="time">
-                <div class="time_block">
-                    <div class="interval" id="seconds">0</div>
-                </div>
-            </div>
-            <div class="time_buttons">
-                <button class="btn" id="start">Start</button>
-                <button class="btn" id="stop">Stop</button>
-                <button class="btn" id="reset">Reset</button>
-            </div>
-        </div>
-    </div>
-
+    <!-- FOOTER -->
     <div class="footer">
         <div class="container">
-            <a href="https://www.instagram.com/nurdinbuy/" target="_blank">
-                <div class="inner_footer">
-                    <h2>Made by NurDinBuy</h2>
+            <div class="footer_inner">
+                <div class="left">
+                    <div>
+                        <div class="light_logo">FGames</div>
+                        <div class="footer_logo">FGames</div>
+                    </div>
+                    <ul class="footer_github">
+                        <a href="https://github.com/adilet0000" target="_blank">
+                            <p class="githubTitle"><span>My </span>GitHub</p>
+                    </ul>
+                    </a>
+                    <span class="copyright-phrase">©Favourite Games - 2024</span>
                 </div>
-            </a>
+                <div class="right">
+                    <div class="pages">
+                        <span>Pages</span>
+                        <a href="index.html">Home (ˉ﹃ˉ)</a>
+                        <a href="pages/characters.html">Characters (⌐■_■)</a>
+                        <a href="pages/mini-games.html">Mini-Games (T_T)</a>
+                        <a href="pages/lessons.html">Lessons (•_•)</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="modal">
-    <div class="modal_dialog">
-        <div class="modal_content">
-            <form action="#">
+
+    <!-- MODAL -->
+    <div class="modal">
+        <div class="modal_dialog">
+            <div class="modal_content">
                 <div class="modal_close">&times;</div>
-                <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
-                <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
-                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal_input">
-                <button class="btn btn_dark btn_min">Перезвонить мне</button>
-            </form>
+                <div class="converter">
+                    <h3>CONVERTER</h3>
+                    <div class="inner_converter">
+                        <div class="som">
+                            <label for="som">KGS</label>
+                            <input type="number" id="som">
+                        </div>
+                        <div class="kzt">
+                            <label for="kzt">KZT</label>
+                            <input type="number" id="kzt">
+                        </div>
+                        <div class="rub">
+                            <label for="rub">RUB</label>
+                            <input type="number" id="rub">
+                        </div>
+                        <div class="usd">
+                            <label for="usd">USD</label>
+                            <input type="number" id="usd">
+                        </div>
+                        <div class="eur">
+                            <label for="eur">EUR</label>
+                            <input type="number" id="eur">
+                        </div>
+                        <div class="gbp">
+                            <label for="gbp">GBP</label>
+                            <input type="number" id="gbp">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
 </body>
-<script src="../js/home_works.js"></script>
-<script src="../js/modal.js"></script>
+
 </html>

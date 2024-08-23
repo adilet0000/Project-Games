@@ -1,42 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Monster</title>
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/core.css">
     <link rel="stylesheet" href="../css/monster.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/modal.css">
+
 </head>
+
 <body>
-<div class="wrapper">
+    <!-- HEADER -->
     <header class="header">
-        <a href="/GameSearchProject/index.html" class="logo">Home</a>
+        <a href="/GameSearchProject/index.html" class="logo">Main</a>
 
         <nav class="navbar">
-            <a href="/GameSearchProject/pages/home_works.html">p1</a>
-            <a href="/GameSearchProject/pages/lessons.html">p2</a>
-            <a href="/GameSearchProject/pages/cardCharacters.html">Cards</a>
+            <a href="/GameSearchProject/pages/characters.html">Characters</a>
+            <a href="/GameSearchProject/pages/mini-games.html">Mini-Games</a>
+            <a href="/GameSearchProject/pages/lessons.html">Lessons</a>
         </nav>
-        <button class="btn-click" id="btn-get">Click!</button>
+        <button class="btn-click" id="btn-get">Convert</button>
     </header>
-</div>
-<canvas id="canvas"></canvas>
 
-<div class="modal">
-    <div class="modal_dialog">
-        <div class="modal_content">
-            <form action="#">
+    <!-- MONSTER -->
+    <canvas id="canvas"></canvas>
+
+    <!-- MODAL -->
+    <div class="modal">
+        <div class="modal_dialog">
+            <div class="modal_content">
                 <div class="modal_close">&times;</div>
-                <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
-                <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
-                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal_input">
-                <button class="btn btn_dark btn_min">Перезвонить мне</button>
-            </form>
+                <div class="converter">
+                    <h3>CONVERTER</h3>
+                    <div class="inner_converter">
+                        <div class="som">
+                            <label for="som">KGS</label>
+                            <input type="number" id="som">
+                        </div>
+                        <div class="kzt">
+                            <label for="kzt">KZT</label>
+                            <input type="number" id="kzt">
+                        </div>
+                        <div class="rub">
+                            <label for="rub">RUB</label>
+                            <input type="number" id="rub">
+                        </div>
+                        <div class="usd">
+                            <label for="usd">USD</label>
+                            <input type="number" id="usd">
+                        </div>
+                        <div class="eur">
+                            <label for="eur">EUR</label>
+                            <input type="number" id="eur">
+                        </div>
+                        <div class="gbp">
+                            <label for="gbp">GBP</label>
+                            <input type="number" id="gbp">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+    <!-- </div> -->
 
 </body>
 <script src="../js/monster.js"></script>
 <script src="../js/modal.js"></script>
+
 </html>
