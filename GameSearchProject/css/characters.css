@@ -126,6 +126,7 @@ body {
 
 .back-content span {
    font-size: calc(var(--index) * .35);
+   color: #fafafa;
 }
 
 .game-name {

@@ -253,8 +253,8 @@ body::before {
     left: 3.5%;
     top: 50%;
     transform: translateY(-50%);
-    width: 800px;
-    height: 800px;
+    width: calc(var(--index) * 25);
+    height: calc(var(--index) * 25);
     background: rgba(255, 255, 255, .8);
     border-radius: 50%;
     filter: blur(200%);
