@@ -2,15 +2,19 @@
     --index: calc(1vw + 1vh);
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 /* BUTTONS */
 
 /* BUTTON CLICK */
 .btn-click {
     display: inline-block;
-    padding: 12px 24px;
+    padding: calc(var(--index) * .55) calc(var(--index) * 1);
     background-color: #151515;
     color: #d8d8d8;
-    font-size: 18px;
+    font-size: calc(var(--index) * .65);
     font-weight: bold;
     text-align: center;
     border: none;
@@ -41,8 +45,8 @@
 
 /* BUTTON-COLOR-CHANGER*/
 .btn {
-    width: 180px;
-    height: 40px;
+    width: calc(var(--index) * 6.55);
+    height: calc(var(--index) * 1.45);
     border: none;
     outline: none;
     color: #fff;
@@ -128,7 +132,7 @@
 }
 
 .footer_logo{
-    font-size: 32px;
+    font-size: calc(var(--index) * 1.1);
     color: #fff;
     text-shadow: 0 0 15px #6b6b6b;
     text-decoration: none;
@@ -141,7 +145,7 @@
 .light_logo{
     font-size: calc(var(--index) * 1.1);
     font-weight: 900;
-    letter-spacing: calc(var(--index) / 5.75);
+    letter-spacing: calc(var(--index) / 4.75);
     color: #ffffff;
     filter: blur(15px);
     position: absolute;
@@ -241,7 +245,7 @@ span {
 }
 
 .logo {
-    font-size: 32px;
+    font-size: calc(var(--index) * 1.25);
     color: #fff;
     text-shadow: 0 0 15px #6b6b6b;
     text-decoration: none;
@@ -262,12 +266,12 @@ span {
 
 .navbar a {
     position: relative;
-    font-size: 18px;
+    font-size: calc(var(--index) * .72);
     color: #fff;
     text-shadow: 0 0 25px #000000;
     font-weight: 400;
     text-decoration: none;
-    margin-left: 40px;
+    margin: 0 calc(var(--index) * 1.65);
 }
 
 .navbar a::before {

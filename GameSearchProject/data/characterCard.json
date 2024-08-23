@@ -1,8 +1,137 @@
 [
     {
-        "name": "",
-        "age": "",
-        "picture": url(),
-        "bio": ""
+        "name_age": "Jackie Welles - 30y.o.",
+        "game": "Cyberpunk 2077",
+        "bio": "Jackie Welles was a merc from Heywood who, together with V, aimed to become a Night City legend. Jackie was known to value friendship, loyalty, and family above all else. He dreamed of living a life of luxury and providing for his own family, a dream that remained elusive for the impatient merc and that would ultimately never materialize."
     },
+    {
+        "name_age": "Johnny Silverhand - 34-88y.o.",
+        "game": "Cyberpunk 2077",
+        "bio": "Johnny Silverhand, born Robert John Linder, was a famous and influential rockerboy and lead singer of the band Samurai before its breakup in 2008. A military veteran who defined the rockerboy movement as it is known today, Silverhand was the most prominent figure who fought against the corrupted NUSA government and megacorporations, often being described as a terrorist because of this. Despite being charismatic and quite the charmer, he was also known to be irrational, impulsive, and manipulative."
+    },
+    {
+        "name_age": "Judy Álvarez - 24y.o.",
+        "game": "Cyberpunk 2077",
+        "bio": "Judy Álvarez is a skilled braindance techie and a member of the Mox. Judy worked as a braindance technician at Clouds for a time. There she met most of the dolls, including Evelyn Parker, Tom Caldera, and Maiko Maeda, the latter with whom she eventually begun a relationship. Judy also helped Maiko jump up the ranks by tweaking the stats on her doll-chip, not only to help her but also hoping things would change for the better for both of them."
+    },
+    {
+        "name_age": "Panam Palmer - 33y.o.",
+        "game": "Cyberpunk 2077",
+        "bio": "Panam Palmer is introduced as a former member of the Aldecaldos nomad clan, who, after a family dispute, decided to live a more independent life as a mercenary. During an assignment to deliver 'merchandise', Panam was betrayed by Nash, who stole both their cargo and her Thorton Mackinaw 'Warhorse'."
+    },
+    {
+        "name_age": "Adam Smasher - 77y.o.",
+        "game": "Cyberpunk 2077",
+        "bio": "Adam Smasher is a full borg solo and rival of Morgan Blackhand. He is employed by Arasaka and by 2077, has risen to the position of head of security and the personal bodyguard of Yorinobu Arasaka. Smasher is a towering cyborg, with little humanity left to be seen - not that he ever had much. After being reduced to mush by an RPG blast, Arasaka offered him a choice - either pull the plug or become a full body conversion cyborg. With little to no options and a lack of care for his human side, he agreed and became more machine than man."
+    },
+    {
+        "name_age": "Viktor Vektor - 46y.o.",
+        "game": "Cyberpunk 2077",
+        "bio": "Viktor Vektor, or Vik for short, is a ripperdoc in Cyberpunk 2077. His clinic is located behind Misty's Esoterica in Little China, Watson. Talented, patient, and professional, Viktor has extended V's credit on a number of occasions, but never complains. Viktor was once a heavyweight boxer in Watson and a member of Night City Devils, competing in the Watson Boxing Grand Prix. He eventually came in second place in the finals. He left that life behind, and has come to prefer the relatively straightforward life of a back-alley ripperdoc."
+    },
+    {
+        "name_age": "Fane - unknown age",
+        "game": "Divinity: Original Sin 2",
+        "bio": "During the reign of the Eternals before the rise of the gods, Fane was a scholar, working in The Eternal Academy, which was a second home to him. His pursuit of knowledge resulted in his discovery of the Veil - a barrier of pure Source, that later turned out to separate Rivellon from the Void. Despite preaching about the significance of his find and the progress its further study might bring to the people, the Eternal King ordered him to halt any research on the Veil. In spite of this, Fane decided to inform the Seven lords of his discovery, hoping their intercession would help to sway the King's ruling, and thus allow him to continue his research. This, however, in King's eyes was nothing short of treason."
+    },
+    {
+        "name_age": "Ifan ben-Mezd - unknown age",
+        "game": "Divinity: Original Sin 2",
+        "bio": "As a child, Ifan lived and travelled with his parents who were spice traders until a band of bandits killed them. Adopted by a nearby elven tribe after his parents murder, he lived with them until he became an adult, learning their language and customs. Leaving the elves as an adult, he joined the Divine Order and quickly gained an attention and favour of Lucian the Divine himself and they became friends; however, he had a constant distrust of the Divine's son, Alexandar whispering in his father ear. In 1233 AD Lucian sent Ifan with a rift scroll to evacuate the elves from the area before a deathfog bomb was released in their lands to prevent the encroachment of the Black Ring."
+    },
+    {
+        "name_age": "Lohse - unknown age",
+        "game": "Divinity: Original Sin 2",
+        "bio": "Lohse seems upbeat and energetic, as well as sarcastic and good humored; but deep inside her psyche, there is evil taking root and spreading throughout her. Despite this, Lohse is a lively character with a sassy attitude. She wants nothing more than to rid herself of the demon lurking inside her mind. While her overall temperament is kind and compassionate, the darkness she keeps just below the surface—while no choice of her own—does affect her judgment and personality, thus warping it on occasion into something twisted and sinister. Lohse has been arrested by magisters in 1242 AD after her source powers manifested during her concert near Arx."
+    },
+    {
+        "name_age": "Malady - unknown age",
+        "game": "Divinity: Original Sin 2",
+        "bio": "Malady is a half demon whose mother is an elf named Loda. She is capable of wielding large quantity of Source; however, the powers which are wielded by the Godwoken (specifically bless) are capable of causing her physical harm due to her half demon physiology. Although working with the Seekers to ascend the Godwoken to the position of Divine, she in fact works for another party. Of the Godwoken, Malady is the closest to Lohse, whom she compares to the 'cherry on the top' and helps her defeat the demon that possessed her. As part of her role in assisting the Godwoken, she will offer favours with the expectation of return payment in the future once the Godwoken has become the Divine One."
+    },
+    {
+        "name_age": "Marcus Miles - unknown age",
+        "game": "Divinity: Original Sin 2",
+        "bio": "Marcus Miles better known as Beast is the cousin of the dwarven queen Justinia who was sent unto Fort Joy in 1242 AD. A dwarven noble who had between 1233 AD and 1242 AD banded with other nobles and tried to overthrow dwarven queen Justinia. The coup was unfortunately for him a disaster and 19 of his fellow allied nobles were swiftly hanged in gallows. Unlike other nobles he was banished and left for death on some remote and deserted island. After escaping from the island he is captured by the magisters, collared and transported to Fort Joy on the Merryweather"
+    },
+    {
+        "name_age": "The Red Prince - unknown age",
+        "game": "Divinity: Original Sin 2",
+        "bio": "The Red Prince is a lizard prince transported into Fort Joy in 1242 AD. The Red Prince is a rare red skinned lizard from the House of War. Because of his royal upbringing within the heart of the Ancient Empire the Forbidden City he developed an arrogant behaviour which is characteristic for someone of his position as he is the crown prince of the House of War. He's been forsaken to Fort Joy due to his enemies making a collaborative move against him. On Island of Reapers' Eye he can be found contemplating on cliff located on beach between the Braccus Rex statue and entrance to Fort Joy."
+    },
+    {
+        "name_age": "Sebille Kaleran - unknown age",
+        "game": "Divinity: Original Sin 2",
+        "bio": "Sebille Kaleran is an elven Sourcerer and Prime Scion of the mother tree, who was taken aboard the Merryweather to Fort Joy in 1242 AD. An elf who was enslaved to the Shadow Master, via the power of a living scar on her face. Sebille managed to break free his control and intentionally sought her way to Fort Joy to find Stingtail, who marked her so in the first place. On her arms are the names of all these she has killed, many of them (unbeknownst to her) scions of various tribes."
+    },
+    {
+        "name_age": "Anti-Mage|MAGINA - unknown age",
+        "game": "DOTA 2",
+        "bio": "The monks of Turstarkuri watched the rugged valleys below their mountain monastery as wave after wave of invaders swept through the lower kingdoms. Ascetic and pragmatic, in their remote monastic eyrie they remained aloof from mundane strife, wrapped in meditation that knew no gods or elements of magic. Then came the Legion of the Dead God, crusaders with a sinister mandate to replace all local worship with their Unliving Lord's poisonous nihilosophy. From a landscape that had known nothing but blood and battle for a thousand years, they tore the souls and bones of countless fallen legions and pitched them against Turstarkuri. The monastery stood scarcely a fortnight against the assault."
+    },
+    {
+        "name_age": "Arc Warden|ZET - unknown age",
+        "game": "DOTA 2",
+        "bio": "As war and cataclysm threatened the nascent cosmos, the will of a third fragment made itself known. Naming itself Zet, this intellect sought to resolve the disharmony and return all to perfect unity. Appalled by its kin's conflicting nature, Zet gathered the sum of its power. In a sudden flash, it overwhelmed its siblings, and fused the warring aspects into a stellar sphere before hurling them into the darkness to orbit a nondescript world. Harmony was restored, though only the barest fraction of Zet's strength remained. Setting its gaze on the prison, Zet chose to use its weakened power to serve as watchful warden until time's end. For uncounted aeons, this vigil stood."
+    },
+    {
+        "name_age": "DIRE|RADIANT - unknown age",
+        "game": "DOTA 2",
+        "bio": "Before the beginning of all, there existed a presence: a primordial mind, infinite, awesome, and set to inscrutable purpose. As the universe thundered into being, this mind was fragmented and scattered. Two among its greater fragments--who would come to be named Radiant and Dire--found themselves locked in vicious opposition, and began twisting all of creation to serve their conflict."
+    },
+    {
+        "name_age": "Juggernaut|YURNERO - unknown age",
+        "game": "DOTA 2",
+        "bio": "No one has ever seen the face hidden beneath the mask of Yurnero the Juggernaut. It is only speculation that he even has one. For defying a corrupt lord, Yurnero was exiled from the ancient Isle of Masks--a punishment that saved his life. The isle soon after vanished beneath the waves in a night of vengeful magic. He alone remains to carry on the Isle's long Juggernaut tradition, one of ritual and swordplay. The last practitioner of the art, Yurnero's confidence and courage are the result of endless practice; his inventive bladework proves that he has never stopped challenging himself. Still, his motives are as unreadable as his expression. For a hero who has lost everything twice over, he fights."
+    },
+    {
+        "name_age": "Phantom Assassin|MORTRED - unknown age",
+        "game": "DOTA 2",
+        "bio": "Through a process of divination, children are selected for upbringing by the Sisters of the Veil, an order that considers assassination a sacred part of the natural order. The Veiled Sisters identify targets through meditation and oracular utterances. They accept no contracts, and never seem to pursue targets for political or mercenary reasons. Their killings bear no relation to any recognizable agenda, and can seem to be completely random: A figure of great power is no more likely to be eliminated than a peasant or a well digger."
+    },
+    {
+        "name_age": "Rubick|GRAND MAGUS - unknown age",
+        "game": "DOTA 2",
+        "bio": "Any mage can cast a spell or two, and a few may even study long enough to become a wizard, but only the most talented are allowed to be recognized as a Magus. Yet as with any sorcerer's circle, a sense of community has never guaranteed competitive courtesy. More than one lay dead by an ally's craft. Rubick stood apart, sore but delighted in the week's festivities. None had the strength to argue when he presented his petition of assumption to the Hidden Council, and the Insubstantial Eleven agreed as one to grant him the title of Grand Magus."
+    },
+    {
+        "name_age": "Shadow Fiend|NEVERMORE - unknown age",
+        "game": "DOTA 2",
+        "bio": "It is said that Nevermore the Shadow Fiend has the soul of a poet, and in fact he has thousands of them. Over the ages he has claimed the souls of poets, priests, emperors, beggars, slaves, philosophers, criminals and (naturally) heroes; no sort of soul escapes him. What he does with them is unknown. No one has ever peered into the Abysm whence Nevermore reaches out like an eel from among astral rocks. Does he devour them one after another? Does he mount them along the halls of an eldritch temple, or pickle the souls in necromantic brine?"
+    },
+    {
+        "name_age": "Wraith King|King OSTARION - unknown age",
+        "game": "DOTA 2",
+        "bio": "For untold years, King Ostarion built a kingdom from the remains of his enemies. It was an obsessive's errand, done to pass the long eternities of a monarchy that seemed fated never to end. He believed that as long as he built up the towers of his palace, he could not die."
+    },
+    {
+        "name_age": "Cirilla Fiona Elen Riannon - 16y.o.",
+        "game": "The Witcher 3: Wild Hunt",
+        "bio": "Cirilla Fiona Elen Riannon (better known as Ciri), was born in 1252 or 1253, and most likely during the Belleteyn holiday. She was the sole princess of Cintra, the daughter of Pavetta and Emhyr var Emreis (who was using the alias 'Duny' at the time) as well as Queen Calanthe's granddaughter."
+    },
+    {
+        "name_age": "Geralt of Rivia - ∿103y.o.",
+        "game": "The Witcher 3: Wild Hunt",
+        "bio": "Geralt of Rivia was a legendary witcher of the School of the Wolf active throughout the 13th century. He loved the sorceress Yennefer, considered the love of his life despite their tumultuous relationship, and became Ciri's adoptive father. During the Trial of the Grasses, Geralt exhibited unusual tolerance for the mutagens that grant witchers their abilities. Accordingly, Geralt was subjected to further experimental mutagens which rendered his hair white and may have given him greater speed, strength, and stamina than his fellow witchers."
+    },
+    {
+        "name_age": "Dandelion - ∿41y.o.",
+        "game": "The Witcher 3: Wild Hunt",
+        "bio": "Julian Alfred Pankratz, Viscount de Lettenhove, better known as Dandelion (Polish: Jaskier), was a poet, minstrel, bard, and close friend of the witcher Geralt of Rivia."
+    },
+    {
+        "name_age": "Triss Merigold - ∿74y.o.",
+        "game": "The Witcher 3: Wild Hunt",
+        "bio": "Triss Merigold of Maribor was a legendary Temerian sorceress in the 13th century. Called the Fourteenth of the Hill by her contemporaries because she was erroneously thought to have been killed during the Battle of Sodden Hill, she passed into history as Merigold the Fearless. A former member of King Foltest's royal council along with Fercart and Keira Metz, as well as a founding member of the Lodge of Sorceresses, she was involved in politics for most of her life. She was friends with Yennefer and the witcher Geralt of Rivia."
+    },
+    {
+        "name_age": "Yennefer of Vengerberg - ∿95y.o.",
+        "game": "The Witcher 3: Wild Hunt",
+        "bio": "Yennefer of Vengerberg, born as Janka on Belleteyn in 1173, was a sorceress who lived in Vengerberg, the capital city of Aedirn. She was Geralt of Rivia's true love and a mother figure to Ciri, whom she viewed like a daughter to the point that she did everything she could to rescue the girl and keep her from harm. She helped advise King Demavend of Aedirn (though was never a formal royal advisor), was a close friend of Triss Merigold, and the youngest member of the Council of Wizards within the Brotherhood of Sorcerers."
+    },
+    {
+        "name_age": "Zoltan Chivay - ∿30y.o.",
+        "game": "The Witcher 3: Wild Hunt",
+        "bio": "Zoltan Chivay was a veteran of the Second Nilfgaard War and a friend of the witcher Geralt of Rivia. They first met when Geralt and Zoltan's company were going towards the Yaruga river from Brokilon, but the dwarf advised them to join his company and go eastwards. It is from Zoltan that Geralt got his sword - a sihil. After the Battle of Brenna, where him and his mates killed Field-Marshal Menno Coehoorn, Zoltan got engaged to Eudora Breckenriggs. He also had a talking parrot, Field Marshal Windbag."
+    }
 ]

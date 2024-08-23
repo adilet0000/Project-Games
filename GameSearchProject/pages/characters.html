@@ -12,9 +12,16 @@
     <link rel="stylesheet" href="../css/core.css">
     <link rel="stylesheet" href="../css/characters.css">
 
+    <script src="../libs/gsap/gsap.min.js" defer></script>
+    <script src="../libs/gsap/Draggable.min.js" defer></script>
+    <script src="../libs/gsap/InertiaPlugin.min.js" defer></script>
+
     <script src="../js/modal.js" defer></script>
     <script src="../js/characters.js" defer></script>
 
+    <style>
+        .gallery { opacity: 0 }
+    </style>
 </head>
 
 <body>
@@ -32,42 +39,415 @@
     </header>
 
 
+    <h2 class="header-title">CHARACTERS <span>Loading...</span></h2>
 
+    <!-- .gallery>(.gallery__item*27>img[src="../src/characters/" alt="Alt"])*1 -->
+    <div class="gallery">
+        <div class="card">
+            <div class="front"><img src="../src/characters/cyberpunk/jackie.png" alt="Alt"></div>
 
-    <div style="width: 100vw; height: 100vh;">252</div>
-
-
-
-
-
-    <!-- FOOTER -->
-    <div class="footer">
-        <div class="container">
-            <div class="footer_inner">
-                <div class="left">
-                    <div>
-                        <div class="light_logo">FGames</div>
-                        <div class="footer_logo">FGames</div>
-                    </div>
-                    <ul class="footer_github">
-                        <a href="https://github.com/adilet0000" target="_blank">
-                            <p class="githubTitle"><span>My </span>GitHub</p>
-                    </ul>
-                    </a>
-                    <span class="copyright-phrase">©Favourite Games - 2024</span>
+            <div class="back">
+    
+                <div class="back-content">
+                    <h2>da da</h2>
+                    <span class="game-name">joisa jfoafjs fas fas</span>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                        doloribus.</span>
                 </div>
-                <div class="right">
-                    <div class="pages">
-                        <span>Pages</span>
-                        <a href="../index.html">Home (ˉ﹃ˉ)</a>
-                        <a href="characters.html">Characters (⌐■_■)</a>
-                        <a href="mini-games.html">Mini-Games (T_T)</a>
-                        <a href="lessons.html">Lessons (•_•)</a>
-                    </div>
-                </div>
+
             </div>
         </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/cyberpunk/johny.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                <div class="back-content">
+                    <h2>da da</h2>
+                    <span class="game-name">joisa jfoafjs fas fas</span>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                        doloribus.</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/cyberpunk/judy.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                <div class="back-content">
+                    <h2>da da</h2>
+                    <span class="game-name">joisa jfoafjs fas fas</span>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                        doloribus.</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/cyberpunk/panam.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                <div class="back-content">
+                    <h2>da da</h2>
+                    <span class="game-name">joisa jfoafjs fas fas</span>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                        doloribus.</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/cyberpunk/smasher.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                <div class="back-content">
+                    <h2>da da</h2>
+                    <span class="game-name">joisa jfoafjs fas fas</span>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                        doloribus.</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/cyberpunk/viktor.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/divinity/fane.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/divinity/ifan.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/divinity/lohse.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/divinity/malady.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/divinity/marcus.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/divinity/redPrince.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/divinity/sebille.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/dota/AM.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/dota/arc.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/dota/direRadiant.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/dota/jaggernaut.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/dota/PA.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/dota/rubick.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/dota/SF.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/dota/WK.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/witcher/cirilla.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/witcher/geralt.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/witcher/lutic.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/witcher/triss.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/witcher/yennifer.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
+        <div class="card">
+            <div class="front"><img src="../src/characters/witcher/zoltan.png" alt="Alt"></div>
+
+            <div class="back">
+    
+                    <div class="back-content">
+                        <h2>da da</h2>
+                        <span class="game-name">joisa jfoafjs fas fas</span>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                            doloribus.</span>
+                    </div>
+    
+                </div>
+        </div>
     </div>
+    
+   
+
+
+    <div class="wrapper">
+
+        <!-- <div class="card">
+
+            <div class="front">
+                <img src="../src/characters/cyberpunk/jackie.png" alt="">
+            </div>
+    
+            <div class="back">
+    
+                <div class="back-content">
+                    <h2>da da</h2>
+                    <span>joisa jfoafjs fas fas</span>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis velit
+                        doloribus.</span>
+                </div>
+
+            </div>
+        </div> -->
+    </div>
+
+
 
 
     <!-- MODAL -->

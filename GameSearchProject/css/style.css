@@ -6,10 +6,6 @@ body {
     --index: calc(1vw + 1vh);
 }
 
-::-webkit-scrollbar {
-    width: 0;
-  }
-
 
 /* MAIN BLOCK */
 

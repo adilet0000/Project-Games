@@ -2,10 +2,6 @@
     --index: calc(1vw + 1vh);
 }
 
-::-webkit-scrollbar {
-    width: 0;
-}
-
 
 /* PHONE CHECKER */
 
@@ -89,6 +85,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 0 25px #c4c4c4
 }
 
 .btn {
